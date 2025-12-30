@@ -2,7 +2,6 @@
     import Hero from "../../components/Hero.svelte";
     import Header from "../../components/Header.svelte";
     import Footer from "../../components/Footer.svelte";
-    import TextBlock from "../../components/TextBlock.svelte";
     import Link from "../../components/Link.svelte";
 </script>
 
