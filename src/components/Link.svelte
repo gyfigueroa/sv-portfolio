@@ -2,10 +2,11 @@
     export let name = '';
     export let link = '';
     export let linktext = '';
+    export let transparency = '';
 </script>
 
 {#if name == ''}
-<a class="link hero-text" href="{link}" target="_blank">{linktext}
+<a class="link hero-text {transparency}" href="{link}" target="_blank">{linktext}
     <img class="icon" src="img/link-arrow.svg" alt="">
 </a>
 {/if}
@@ -30,6 +31,7 @@
         padding:  var(--spacing1) var(--spacing2);
         border-radius: var(--spacing2);
         background-color: var(--lime20);
+        backdrop-filter: blur(5px);
         color: var(--lime100);
         transition: background-color var(--animationquick), gap var(--animationquick);
     }
@@ -39,8 +41,17 @@
         /* gap: var(--spacing2); */
     }
 
+    .no{
+        background-color: #1F5526;
+    }
+
+    .no:hover{
+        background-color: #4B9624;
+    }
+
     .icon{
         transition: margin var(--animationquick);
+        border-radius: 0;
     }
 
     .link:hover > .icon{

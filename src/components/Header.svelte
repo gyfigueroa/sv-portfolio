@@ -25,11 +25,14 @@
         top: var(--spacing4);
         z-index: 1;
         transition: all var(--animationquick) ease;
+        margin: var(--spacing2);
     }
 
     header:hover{
         width: 220px;
-        height: calc(2 * var(--spacing5));
+        /* height: calc(2 * var(--spacing5)); */
+        transform-origin: top left;
+        transform: scale(1.25);
         gap: var(--spacing2);
         padding: 0px 25px;
     }
@@ -45,6 +48,7 @@
         height: 20px;
         width: auto;
         transition: all var(--animationquick);
+        border-radius: 0;
     }
 
     header:hover > .home-icon{

@@ -72,10 +72,9 @@
 {/if}
 
 <style>
-			:root {
-		--accent-color: CornflowerBlue;
-		--gray: #ccc;
-        --scaleunit: 2;
+	:root {
+		
+        --scaleunit: 1.5;
 	}
     /* Inner Design Option */
     .s--inner button {
@@ -211,29 +210,26 @@
         transition: transform 0.3s ease;
         background: linear-gradient(to top, var(--sand100,white) 0%, var(--gray,gray) 100%);
         box-shadow: inset 0px -2px 2px 1px var(--gray,gray), inset 0px 2px 2px 1px var(--sand100,white), 0px 5px 4px -2px rgba(0,0,0,0.5);
-
     }
 
     /* PILL PRODUCT */
     .s--multi label:first-of-type:after {
         background: var(--accent-color);
-        background: orange;
-        box-shadow: 0.1em 0.1em 0.1em -0.05em var(--sand100,white), -0.1em -0.1em 0.1em -0.05em var(--brown,brown), inset 0px 0px 0.4em 0.5em var(--sand50,white), inset 0px 2em 2em 0px brown;
+        background-color: var(--orange, orange);
+        box-shadow: 0em 0.1em 0.1em -0.05em var(--sand100,white), -0em -0.1em 0.1em -0.05em var(--brown,brown), inset 0px 0px 0.25em 0.25em var(--sand50,white), inset 0px 2em 2em 0px var(--brown, brown), 0px 0px 30px 15px var(--smoke);
         /* border: var(--sand50) 4px solid;
         box-sizing: border-box; */
         border-radius: calc(1em * var(--scaleunit));
         margin: 0 calc(1em * var(--scaleunit));
-        transition: background var(--animationquick) ease-in-out, box-shadow var(--animationquick) ease-in-out;
+        transition: background-color var(--animationquick) ease-in-out, box-shadow var(--animationquick) ease-in-out;
         width: calc(3em * var(--scaleunit));
         height: calc(1.6em * var(--scaleunit));
     }
 
     /* PILL LEFT */
     .s--multi input:first-of-type:checked ~ label:first-of-type:after {
-        background: var(--lime100);
-        box-shadow: 0.1em 0.1em 0.1em -0.05em var(--sand100,white), -0.1em -0.1em 0.1em -0.05em var(--forestgreen,darkgreen), inset 0px 0px 0.4em 0.5em var(--sand50,white), inset 0px 2em 2em 0px var(--forestgreen);
-
-
+        background-color: var(--lime100);
+        box-shadow: 0em 0.1em 0.1em -0.05em var(--sand100,white), -0em -0.1em 0.1em -0.05em var(--forestgreen,darkgreen), inset 0px 0px 0.25em 0.25em var(--sand50,white), inset 0px 2em 2em 0px var(--forestgreen, darkgreen), 0px 0px 30px 15px var(--smoke);
     }
 
     .s--multi input:first-of-type:checked ~ label:first-of-type:before {

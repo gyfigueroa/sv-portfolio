@@ -9,7 +9,8 @@
 
 /* VARIABLES */
 :root{
-    --forestgreen: #002C21;
+    --forestgreen: rgb(0, 44, 33);
+    --forestgreen90: rgba(0, 44, 33, 0.9);
     --lime: 149, 255, 0;
     --lime100: rgb(var(--lime));
     --lime50: rgba(var(--lime), 0.5);
@@ -17,6 +18,7 @@
     --sand: 246, 245, 240;
     --sand100: rgb(var(--sand));
     --sand50: rgba(var(--sand), 0.5);
+    --sand25: rgba(var(--sand), 0.25);
     --sand0: rgba(var(--sand), 0);
     --smoke: rgb(208, 215, 208);
     --smoke50: rgba(208, 215, 208, 0.5);
@@ -31,8 +33,8 @@
     --emphasis: 600 1.25rem/1.25em var(--ff);
     --herotext: 600 1.25rem/1.1em var(--ff);
     --herotitle: 600 2.5rem/1em var(--ff);
-    --projecttitle: 700 1.125rem/1.1em var(--ff);
-    --projecthook: 600 1.25rem/1em var(--ff);
+    --projecttitle: 700 1.125rem/1em var(--ff);
+    --projecthook: 600 1.5rem/1em var(--ff);
     --heroserif: 3.5rem/1em var(--ff2);
 
   /*   --herotext: 600 1.25rem/1.2em var(--ff);
@@ -56,7 +58,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  text-wrap: balance;
+  text-wrap: wrap;
   font: var(--p);
   background: var(--smoke);
   background-image: url("img/dotgrid.svg");
@@ -86,7 +88,7 @@ h2 {
 
 .hero-title{
   font: var(--herotitle);
-  letter-spacing: -.1em;
+  letter-spacing: -.05em;
 }
 
 .hero-text{
@@ -130,8 +132,8 @@ p {
         --label: 800 1.5rem/1.2em var(--ff);
         --emphasis: 600 1.5rem/1.5em var(--ff);
         --herotext: 600 1.75rem/1.2em var(--ff);
-        --herotitle: 600 8rem/1em var(--ff);
-        --projecttitle: 700 1.25rem/1.2em var(--ff);
+        --herotitle: 600 4rem/1em var(--ff);
+        --projecttitle: 700 1.25rem/1em var(--ff);
         --projecthook: 600 2rem/1em var(--ff);
         --heroserif: 6rem/1em var(--ff2);
       }
@@ -151,6 +153,7 @@ p {
 @media screen and (min-width: 1000px) {
   :root{
     --herotext: 600 2.25rem/1.2em var(--ff);
+    --herotitle: 600 8rem/1em var(--ff);
   }
 }
 
@@ -208,6 +211,12 @@ section {
   padding: 10px;
   background-color: var(--sand100);
 /*   border: solid 1px #9EA39E; */
+  box-shadow: 0px 0px 0px 1px var(--gray50), var(--softshadow);
+}
+
+.img-border{
+  padding: 10px;
+  background-color: var(--sand100);
   box-shadow: 0px 0px 0px 1px var(--gray50), var(--softshadow);
 }
 .center {
@@ -325,3 +334,37 @@ section {
   padding: var(--spacing2);
   border-radius: var(--spacing2);
 }
+
+/* 
+ARTICLE STUFF
+ */
+
+ img{
+        border-radius: var(--spacing3);
+        display: block; 
+        width: 100%;
+    }
+
+    .img-slider {
+        height: 100%;
+    }
+
+    .img-slider > img{
+        position: sticky;
+        top: 25%;
+        margin-bottom: var(--spacing3);
+    }
+
+    .emphasis-container{
+        flex-wrap: wrap;
+    }
+
+    .img-with-link{
+        position: relative;
+    }
+
+    .link-bottom-right{
+        position: absolute;
+        bottom: var(--spacing3);
+        right: var(--spacing3);
+    }

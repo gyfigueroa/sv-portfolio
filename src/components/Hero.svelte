@@ -106,6 +106,7 @@
         width: auto;
         /* background-color: blue; */
         backdrop-filter: blur(400px) saturate(2);
+        box-shadow: 0px 0px 0px 1px var(--smoke50);
         margin: var(--spacing4);
         padding: var(--spacing5);
         border-radius: var(--spacing5);
@@ -117,9 +118,9 @@
     }
 
     .credit {
-        margin-top: var(--spacing2);
+        margin-top: var(--spacing3);
         display: flex;
-        gap: var(--spacing2);
+        gap: var(--spacing1);
         flex-wrap: wrap;
         align-items: baseline;
     }

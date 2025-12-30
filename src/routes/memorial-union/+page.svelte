@@ -12,7 +12,7 @@
     title="UC Davis Memorial Union App"
     role="Design Interactive"
     names='Spring 2023 Cohort'
-    textHTML="<p>The Memorial Union (MU) is a central hub of student life at UC Davis that aims to connect students to campus and enrich their experience by providing a space for students to study, snack and socialize. In the span of 6 weeks, our team followed a human-centered design process to create an application that highlights what the MU has to offer and makes relevant information more accessible for students.</p><br><p>Awarded most Customer Centric UX by panel of industry professionals</p>"
+    textHTML="<p>The Memorial Union (MU) is a central hub of student life at UC Davis that aims to connect students to campus and enrich their experience by providing a space for students to study, snack and socialize. In the span of 6 weeks, our team followed a human-centered design process to create an application that highlights what the MU has to offer and makes relevant information more accessible for students.</p><p>Awarded most Customer Centric UX by panel of industry professionals</p>"
     img="img/memorial-union/header.webp"
 />
 

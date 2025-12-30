@@ -9,6 +9,7 @@
     import Emoji from "../components/Emoji.svelte";
     import Header from "../components/Header.svelte";
     import Saos from "saos";
+    import Avatar from "../components/Avatar.svelte";
 
     import Switch from "../components/Switch.svelte";
 
@@ -21,8 +22,17 @@
 
     let multiValue = "brand";
 
+    function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min; // The maximum is inclusive and the minimum is inclusive
+    }
 
-    function toggleVissible() {
+    let filmBG = getRandomIntInclusive(1,41);
+    let glassBG = getRandomIntInclusive(1,10);
+
+
+    /* function toggleVissible() {
         toggle = !toggle;
         if (toggle == true){
             brandproject = 'visible';
@@ -38,12 +48,12 @@
             document.documentElement.style.setProperty('--color1', "rgb(149, 255, 0)");
             document.documentElement.style.setProperty('--color2', "#002C21");
         }
-    }
+    } */
 </script>
 
-<div class="landing">
-    <div class="left-col" style="background-image: url('img/horizontal-film-dithered.gif');">
-
+<div class="landing" style="background-image: url('img/glass-bg/{glassBG}.webp')">
+    <div class="left-col" style="background-image: url('img/horizontal-film-dithered.gif'); position:relative">
+        <Avatar/>
     </div>
     <div class="right-col">
         <div class="name-container">
@@ -108,24 +118,11 @@
 
 <Header/>
 
-<div class="gallery-container">
+<div class="gallery-container margin4">
+
 
 <section class="toggle-container">
-    <button class="toggle-wrapper label" on:click={toggleVissible}>
-        Brand
-        <div class="toggle">
-            <div class="toggle-circle {toggleposition} skeu-effect">
-            </div>
-        </div>
-        Product
-    </button>
-</section>
-
-<section class="toggle-container">
-    <Switch bind:value={multiValue} label="Choose a focus" design="multi" options={['brand', 'product']} fontSize={12}/>
-    <p>
-        Switch is {multiValue}
-    </p>
+    <Switch bind:value={multiValue} label="" design="multi" options={['brand', 'product']} fontSize={12}/>
 </section>
 
 {#if multiValue == "brand"}
@@ -143,7 +140,7 @@
                 link="/mental-health-initiative"
                 img="img/mhi/mhi-hero-image-3.svg"
                 projecttitle="Mental Health Initiative"
-                projectdesc="Creative Direction- Merchandise, Social Media Campaign"
+                projectdesc="Creative Direction • Merchandise, Social Media Campaign"
             />
 
             
@@ -162,7 +159,7 @@
                 link="/sunset-fest-24"
                 img="img/ssf24/Poster.avif"
                 projecttitle="Sunset Fest 2024"
-                projectdesc="Creative Direction- Merchandise, Social Media Campaign"
+                projectdesc="Creative Direction • Integrated Advertising Campaign"
             />
             
 
@@ -173,7 +170,7 @@
                 link="/la-gran-tardeada"
                 img="img/la-gran-tardeada/cover.svg"
                 projecttitle="La Gran Tardeada"
-                projectdesc="Creative Direction- Merchandise, Social Media Campaign"
+                projectdesc="Creative Direction • Merchandise, Graphic Design"
             />
 
             <ProjectFlex2
@@ -186,7 +183,7 @@
                 link="/nu-alpha-kappa"
                 img="img/nak/NAK-hero.svg"
                 projecttitle="Nu Alpha Kappa Fraternity Inc."
-                projectdesc="Creative Direction- Merchandise, Social Media Campaign"
+                projectdesc="Creative Direction • Print & Social Media Campaigns"
             />
 
             
@@ -209,7 +206,7 @@
     </div>
     <div>
         <ProjectFlex2 
-            link=""
+            link="/applebttm"
             img="img/applebttm/header.webp"
             projecttitle="Applebttm"
             projecthook="Reinventing music discovery through community, conversation, and clean UX."
@@ -260,44 +257,6 @@
         align-items: center;
     }
 
-    .toggle-wrapper{
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        gap: var(--spacing2);
-    }
-
-    .toggle{
-        height: 50px;
-        width: 100px;
-        border-radius: 50px;
-        background-color: var(--sand100);
-        background: linear-gradient(to top, var(--sand100, orange) 0%, var(--smoke, brown) 100%);
-        display: flex;
-        transition: all var(--animationquick);
-        border: var(--spacing1) solid var(--sand100);
-        position: relative;
-    }
-
-    .toggle-circle{
-        height: 100%;
-        aspect-ratio: 1/1;
-        background-color: purple;
-        border-radius: 100px;
-        position: absolute;
-        transition: all 0.5s ease;
-    }
-
-    .toggle-circle.left{
-        left: 0;
-        transform: translateX(0%);
-        
-    }
-    .toggle-circle.right{
-        left: 100%;
-        transform: translateX(-100%);
-        
-    }
 
     .skeu-effect{
         background-color: green;
@@ -323,11 +282,12 @@
         padding: var(--spacing4) var(--spacing4) calc(var(--spacing4) + 100px) var(--spacing4) ;
         gap: var(--spacing4);
         color: var(--lime100);
+        overflow-x: clip;
     }
 
     .landing > div {
         border-radius: var(--spacing5);
-        padding: var(--spacing5);
+        
         background-position: center;
         background-size: cover;
     }
@@ -335,12 +295,21 @@
     .name-container{
         width: 100%;
     }
+    
+    .left-col{
+        background-color: var(--sand50);
+        box-shadow: 0px 0px 0px 1px var(--smoke50);
+        backdrop-filter: blur(10px);
+    }
 
     .right-col{
+        padding: var(--spacing5);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: var(--forestgreen);
+        background-color: var(--forestgreen90);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 0px 1px var(--smoke50)
     }
 
     .gallery-container{
@@ -409,6 +378,8 @@
 
     .banner-anchor{
         position: relative;
+        width: 100vw;
+        overflow-x: clip;
     }
 
     .banner {
@@ -420,6 +391,8 @@
         position: absolute;
         transform: translate(0, -50%) rotate(-2deg);
         z-index: 5;
+        /* box-shadow: inset 0px 0px 30px 6px #452701;
+        text-shadow: 0px -5px 15px orange, 0px 0px 3px #FF9800; */
         
     }
 
@@ -430,6 +403,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         /* font-size: 40pt;
         font-family: "Yesteryear", cursive; */
     }
