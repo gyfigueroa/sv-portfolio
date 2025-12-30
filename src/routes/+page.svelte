@@ -1,5 +1,5 @@
 <script>
-    import ProjectFlex2 from "../components/ProjectFlex2.svelte";
+    import Project from "../components/Project.svelte";
     import Link from "../components/Link.svelte";
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
@@ -7,11 +7,6 @@
     import Switch from "../components/Switch.svelte";
 
     import { fade, fly } from 'svelte/transition';
-
-    let toggle = true;
-    let toggleposition = 'left'
-    let brandproject = 'visible';
-    let productproject = 'hidden';
 
     let multiValue = "brand";
 
@@ -99,137 +94,121 @@
     <Switch bind:value={multiValue} label="" design="multi" options={['brand', 'product']} fontSize={12}/>
 </section>
 
-
-<section class="main-gallery">
+{#key multiValue}
+<section class="main-gallery" out:fade={{ duration: 250 }}
+        in:fly={{ y: 200, duration: 350, delay: 250 }} >
+    {#if multiValue == "brand"}
     <div>
-            {#if multiValue == "brand"}
-            <ProjectFlex2
-                    link="/asucd"
-                    img="img/asucd/asucd-hero-image.svg"
-                    projecttitle="ASUCD"
-                    projecthook="Building a <span class='underline'>unified brand system</span> for UC Davis's largest student organization."
-            />
-            {/if}
+        <Project 
+            link="/asucd"
+            img="img/asucd/asucd-hero-image.svg"
+            projecttitle="ASUCD"
+            projecthook="Building a <span class='underline'>unified brand system</span> for UC Davis's largest student organization."
+        />
 
-            {#if multiValue == "brand"}
-            <ProjectFlex2
-                link="/mental-health-initiative"
-                img="img/mhi/mhi-hero-image-3.svg"
-                projecttitle="Mental Health Initiative"
-                projectdesc="Creative Direction • Merchandise, Social Media Campaign"
-            />
-            {/if}
-
-            {#if multiValue == "product"}
-            <ProjectFlex2
-                link="/memorial-union"
-                img="img/memorial-union/header.webp"
-                projecttitle="Memorial Union App"
-                projecthook="Building a <span class='underline'>data-informed navigation app</span> to help students find services faster and feel more connected on campus."
-            />
-            {/if}
-            
-
-    </div>
+        <Project
+            link="/mental-health-initiative"
+            img="img/mhi/mhi-hero-image-3.svg"
+            projecttitle="Mental Health Initiative"
+            projectdesc="Creative Direction • Merchandise, Social Media Campaign"
+        />
     
+    </div>
+
     <div>
-            {#if multiValue == "brand"}
-            <ProjectFlex2
-                link="/elections"
-                img="img/elections/poster.avif"
-                projecttitle="ASUCD Elections"
-                projecthook="Revitalizing voter engagement with a <span class='underline'>clear, accessible</span> election <span class='underline'>marketing campaign.</span>"
-            />
-            {/if}
-
-            {#if multiValue == "brand"}
-            <ProjectFlex2
-                link="/sunset-fest-24"
-                img="img/ssf24/Poster.avif"
-                projecttitle="Sunset Fest 2024"
-                projectdesc="Creative Direction • Integrated Advertising Campaign"
-            />
-            {/if}
-
-            {#if multiValue == "product"}
-            <ProjectFlex2 
-                link="/applebttm"
-                img="img/applebttm/header.webp"
-                projecttitle="Applebttm"
-                projecthook="Reinventing <span class='underline'>music discovery</span> through community, conversation, and <span class='underline'>clean UX.</span>"
-            />
-            {/if}
-
-            {#if multiValue == "product"}
-            <ProjectFlex2
-                link=''
-                projecttitle='The Gorilla(i) Problem'
-                projectdesc="Interactive Web App | HTML/CSS"
-            />
-            {/if}
-            
-
+        <Project
+            link="/elections"
+            img="img/elections/poster.avif"
+            projecttitle="ASUCD Elections"
+            projecthook="Revitalizing voter engagement with a <span class='underline'>clear, accessible</span> election <span class='underline'>marketing campaign.</span>"
+        />
+        <Project
+            link="/sunset-fest-24"
+            img="img/ssf24/Poster.avif"
+            projecttitle="Sunset Fest 2024"
+            projectdesc="Creative Direction • Integrated Advertising Campaign"
+        />
     </div>
-    
+
     <div>
-            {#if multiValue == "brand"}
-            <ProjectFlex2
-                link="/la-gran-tardeada"
-                img="img/la-gran-tardeada/cover.svg"
-                projecttitle="La Gran Tardeada"
-                projectdesc="Creative Direction • Merchandise, Graphic Design"
-            />
-            {/if}
-
-
-            {#if multiValue == "brand"}
-            <ProjectFlex2
-                link="/mooseum"
-                img="img/mooseum/67f2f56286b62a2ae012baae_P1088585.avif"
-                projecttitle="Moo-vin' Moo-seum"
-                projecthook="Transforming student awareness of campus resources through <span class='underline'>playful, story-driven design.</span>"
-            />
-            {/if}
-
-            {#if multiValue == "brand"}
-            <ProjectFlex2
-                link="/nu-alpha-kappa"
-                img="img/nak/NAK-hero.svg"
-                projecttitle="Nu Alpha Kappa Fraternity Inc."
-                projectdesc="Creative Direction • Print & Social Media Campaigns"
-            />
-            {/if}
-
-            {#if multiValue == "product"}
-            <ProjectFlex2
-                link=''
-                projecttitle='Game of PIG'
-                projectdesc="Interactive Web App | HTML/CSS"
-            />
-            {/if}
-
-            {#if multiValue == "product"}
-            <ProjectFlex2
-                link=''
-                projecttitle='Film Industry Statistics'
-                projectdesc="Interactive Web App | D3.js"
-            />
-            {/if}
-
-            {#if multiValue == "product"}
-            <ProjectFlex2
-                link=''
-                projecttitle='Madlibs'
-                projectdesc="Interactive Web App | HTML/CSS"
-            />
-            {/if}
-
-
-            
-
+        <Project
+            link="/la-gran-tardeada"
+            img="img/la-gran-tardeada/cover.svg"
+            projecttitle="La Gran Tardeada"
+            projectdesc="Creative Direction • Merchandise, Graphic Design"
+        />
+        <Project
+            link="/mooseum"
+            img="img/mooseum/67f2f56286b62a2ae012baae_P1088585.avif"
+            projecttitle="Moo-vin' Moo-seum"
+            projecthook="Transforming student awareness of campus resources through <span class='underline'>playful, story-driven design.</span>"
+        />
+        <Project
+            link="/nu-alpha-kappa"
+            img="img/nak/NAK-hero.svg"
+            projecttitle="Nu Alpha Kappa Fraternity Inc."
+            projectdesc="Creative Direction • Print & Social Media Campaigns"
+        />
     </div>
-    
+    {:else if multiValue == "product"}
+    <div>
+        <Project
+            link="/memorial-union"
+            img="img/memorial-union/header.webp"
+            projecttitle="Memorial Union App"
+            projecthook="Building a <span class='underline'>data-informed navigation app</span> to help students find services faster and feel more connected on campus."
+        />
+    </div>
+
+    <div>
+        <Project 
+            link="/applebttm"
+            img="img/applebttm/header.webp"
+            projecttitle="Applebttm"
+            projecthook="Reinventing <span class='underline'>music discovery</span> through community, conversation, and <span class='underline'>clean UX.</span>"
+        />
+        <Project
+            link='https://gyfigueroa.github.io/des157b/capstone/version2/index.html'
+            img="img/project-covers/gorillai.webp"
+            projecttitle='The GorillAI Problem'
+            projectdesc="Interactive Narrative • HTML/CSS/Javascript"
+            target="_blank"
+        />
+    </div>
+
+    <div>
+        <Project
+            link='https://gyfigueroa.github.io/des157a/studio2/index.html'
+            img="img/project-covers/everypicture.webp"
+            projecttitle='Film Journal'
+            projectdesc="Interactive Web Gallery • HTML/CSS"
+            target="_blank"
+        />
+        <Project
+            link='https://gyfigueroa.github.io/des157a/studio3/index.html'
+            img="img/project-covers/pig.webp"
+            projecttitle='Game of PIG'
+            projectdesc="Interactive Web Game • HTML/CSS"
+            target="_blank"
+        />
+        <Project
+            link='https://iandunk.github.io/ECS163-Final-Project/index.html'
+            img="img/project-covers/cinema.webp"
+            projecttitle='Cinema Data Stories'
+            projectdesc="Interactive Dashboard • D3.js"
+            target="_blank"
+        />
+        <Project
+            link='https://gyfigueroa.github.io/des157a/final/project/index.html'
+            img="img/project-covers/madlibs.webp"
+            projecttitle='Madlibs'
+            projectdesc="Interactive Web App • HTML/CSS"
+            target="_blank"
+        />
+    </div>
+    {/if}
 </section>
+{/key}
 
 
 
@@ -278,6 +257,7 @@
         background-color: var(--sand50);
         box-shadow: 0px 0px 0px 1px var(--smoke50);
         backdrop-filter: blur(10px);
+        z-index: 1;
     }
 
     .right-col{

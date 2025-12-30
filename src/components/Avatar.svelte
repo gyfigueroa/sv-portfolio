@@ -1,9 +1,6 @@
 <script>
-    import { elasticInOut } from "svelte/easing";
-    import Emoji from "./Emoji.svelte";
     export let img = 'img/GabrielCropped.jpg';
     import { onMount } from "svelte";
-    import { blur, scale } from "svelte/transition";
 
     const outerOuterMin = -45;
     const outerOuterMax = 45;
