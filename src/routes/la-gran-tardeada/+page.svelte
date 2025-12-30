@@ -11,7 +11,7 @@
     title="La Gran Tardeada"
     role="Design"
     names="Gabriel Figueroa"
-    textHTML="<p>My poster design was selected as the winning identity for UC Davis's La Gran Tardeada, an annual tradition hosted by the Cross Cultural Center that celebrates the Chicanx/Latinx community through food, music, and dance. Drawing from the hand-painted street-sign aesthetics of my childhood between Tijuana and San Diego and incorporating client-requested floral motifs, I created a vibrant visual that honored cultural heritage and was featured across posters, totes, shirts, and stickers.</p>"
+    text="My poster design was selected as the winning identity for UC Davis's La Gran Tardeada, an annual tradition hosted by the Cross Cultural Center that celebrates the Chicanx/Latinx community through food, music, and dance. Drawing from the hand-painted street-sign aesthetics of my childhood between Tijuana and San Diego and incorporating client-requested floral motifs, I created a vibrant visual that honored cultural heritage and was featured across posters, totes, shirts, and stickers."
     img='img/la-gran-tardeada/cover.svg'
 />
 

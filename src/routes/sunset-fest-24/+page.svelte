@@ -13,7 +13,7 @@
     names="Gabriel Figueroa"
     role2="Lead Designer"
     names2="Joyce Pau"
-    textHTML="<p>Sunset Fest is ASUCD’s annual homecoming music festival that takes place every Fall marking the start of a new school year. For Sunset Fest 2024, within a month, we brought to life a minimalistic and modular identity using warm sunset color blocks and repeating design patterns so everything could be seamlessly integrated into variously sized deliverables on a tight deadline. The full suite of assets we delivered included designs for a T-shirt, tote bag, stickers, flyers, and social media posts with additional social media assets being designed by Entertainment Council design directors.</p>"
+    text="Sunset Fest is ASUCD’s annual homecoming music festival that takes place every Fall marking the start of a new school year. For Sunset Fest 2024, within a month, we brought to life a minimalistic and modular identity using warm sunset color blocks and repeating design patterns so everything could be seamlessly integrated into variously sized deliverables on a tight deadline. The full suite of assets we delivered included designs for a T-shirt, tote bag, stickers, flyers, and social media posts with additional social media assets being designed by Entertainment Council design directors."
     img="img/ssf24/Poster.avif"
 />
 

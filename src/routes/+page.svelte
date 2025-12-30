@@ -1,16 +1,9 @@
 <script>
-    import Project from "../components/ProjectFlex2.svelte";
-    import ProjectFlex from "../components/ProjectFlex2.svelte";
     import ProjectFlex2 from "../components/ProjectFlex2.svelte";
-    import Hero from "../components/Hero.svelte";
     import Link from "../components/Link.svelte";
     import Footer from "../components/Footer.svelte";
-    import TextBlock from "../components/TextBlock.svelte";
-    import Emoji from "../components/Emoji.svelte";
     import Header from "../components/Header.svelte";
-    import Saos from "saos";
     import Avatar from "../components/Avatar.svelte";
-
     import Switch from "../components/Switch.svelte";
 
     import { fade, fly } from 'svelte/transition';
@@ -28,27 +21,8 @@
         return Math.floor(Math.random() * (max - min + 1)) + min; // The maximum is inclusive and the minimum is inclusive
     }
 
-    let filmBG = getRandomIntInclusive(1,41);
     let glassBG = getRandomIntInclusive(1,10);
 
-
-    /* function toggleVissible() {
-        toggle = !toggle;
-        if (toggle == true){
-            brandproject = 'visible';
-            productproject = 'hidden';
-            toggleposition = 'left';
-            
-            document.documentElement.style.setProperty('--color1', "orange");
-            document.documentElement.style.setProperty('--color2', "brown");
-        } else {
-            brandproject = 'hidden';
-            productproject = 'visible';
-            toggleposition = "right";
-            document.documentElement.style.setProperty('--color1', "rgb(149, 255, 0)");
-            document.documentElement.style.setProperty('--color2', "#002C21");
-        }
-    } */
 </script>
 
 <div class="landing" style="background-image: url('img/glass-bg/{glassBG}.webp')">
@@ -125,122 +99,139 @@
     <Switch bind:value={multiValue} label="" design="multi" options={['brand', 'product']} fontSize={12}/>
 </section>
 
-{#if multiValue == "brand"}
-<section class="main-gallery" in:fly={{ y: 200 }} out:fade>
-    <div>
 
+<section class="main-gallery">
+    <div>
+            {#if multiValue == "brand"}
             <ProjectFlex2
                     link="/asucd"
                     img="img/asucd/asucd-hero-image.svg"
                     projecttitle="ASUCD"
-                    projecthook="Building a unified brand system for UC Davis's largest student organization."
-                />
+                    projecthook="Building a <span class='underline'>unified brand system</span> for UC Davis's largest student organization."
+            />
+            {/if}
 
+            {#if multiValue == "brand"}
             <ProjectFlex2
                 link="/mental-health-initiative"
                 img="img/mhi/mhi-hero-image-3.svg"
                 projecttitle="Mental Health Initiative"
                 projectdesc="Creative Direction • Merchandise, Social Media Campaign"
             />
+            {/if}
 
+            {#if multiValue == "product"}
+            <ProjectFlex2
+                link="/memorial-union"
+                img="img/memorial-union/header.webp"
+                projecttitle="Memorial Union App"
+                projecthook="Building a <span class='underline'>data-informed navigation app</span> to help students find services faster and feel more connected on campus."
+            />
+            {/if}
             
 
     </div>
     
     <div>
-
+            {#if multiValue == "brand"}
             <ProjectFlex2
                 link="/elections"
                 img="img/elections/poster.avif"
                 projecttitle="ASUCD Elections"
-                projecthook="Revitalizing voter engagement with a clear, accessible election marketing campaign."
+                projecthook="Revitalizing voter engagement with a <span class='underline'>clear, accessible</span> election <span class='underline'>marketing campaign.</span>"
             />
+            {/if}
+
+            {#if multiValue == "brand"}
             <ProjectFlex2
                 link="/sunset-fest-24"
                 img="img/ssf24/Poster.avif"
                 projecttitle="Sunset Fest 2024"
                 projectdesc="Creative Direction • Integrated Advertising Campaign"
             />
+            {/if}
+
+            {#if multiValue == "product"}
+            <ProjectFlex2 
+                link="/applebttm"
+                img="img/applebttm/header.webp"
+                projecttitle="Applebttm"
+                projecthook="Reinventing <span class='underline'>music discovery</span> through community, conversation, and <span class='underline'>clean UX.</span>"
+            />
+            {/if}
+
+            {#if multiValue == "product"}
+            <ProjectFlex2
+                link=''
+                projecttitle='The Gorilla(i) Problem'
+                projectdesc="Interactive Web App | HTML/CSS"
+            />
+            {/if}
             
 
     </div>
     
     <div>
+            {#if multiValue == "brand"}
             <ProjectFlex2
                 link="/la-gran-tardeada"
                 img="img/la-gran-tardeada/cover.svg"
                 projecttitle="La Gran Tardeada"
                 projectdesc="Creative Direction • Merchandise, Graphic Design"
             />
+            {/if}
 
+
+            {#if multiValue == "brand"}
             <ProjectFlex2
                 link="/mooseum"
                 img="img/mooseum/67f2f56286b62a2ae012baae_P1088585.avif"
                 projecttitle="Moo-vin' Moo-seum"
-                projecthook="Transforming student awareness of campus resources through playful, story-driven design."
+                projecthook="Transforming student awareness of campus resources through <span class='underline'>playful, story-driven design.</span>"
             />
+            {/if}
+
+            {#if multiValue == "brand"}
             <ProjectFlex2
                 link="/nu-alpha-kappa"
                 img="img/nak/NAK-hero.svg"
                 projecttitle="Nu Alpha Kappa Fraternity Inc."
                 projectdesc="Creative Direction • Print & Social Media Campaigns"
             />
+            {/if}
+
+            {#if multiValue == "product"}
+            <ProjectFlex2
+                link=''
+                projecttitle='Game of PIG'
+                projectdesc="Interactive Web App | HTML/CSS"
+            />
+            {/if}
+
+            {#if multiValue == "product"}
+            <ProjectFlex2
+                link=''
+                projecttitle='Film Industry Statistics'
+                projectdesc="Interactive Web App | D3.js"
+            />
+            {/if}
+
+            {#if multiValue == "product"}
+            <ProjectFlex2
+                link=''
+                projecttitle='Madlibs'
+                projectdesc="Interactive Web App | HTML/CSS"
+            />
+            {/if}
+
 
             
 
     </div>
     
 </section>
-{/if}
 
-{#if multiValue == "product"}
-<section class="main-gallery" in:fly={{ y: 200 }} out:fade>
-    <div>
-        <ProjectFlex2
-            link="/memorial-union"
-            img="img/memorial-union/header.webp"
-            projecttitle="Memorial Union App"
-            projecthook="Building a data-informed navigation app to help students find services faster and feel more connected on campus."
-        />
-        
-    </div>
-    <div>
-        <ProjectFlex2 
-            link="/applebttm"
-            img="img/applebttm/header.webp"
-            projecttitle="Applebttm"
-            projecthook="Reinventing music discovery through community, conversation, and clean UX."
-        />
-        <ProjectFlex2
-            link=''
-            projecttitle='The Gorilla(i) Problem'
-            projectdesc="Interactive Web App | HTML/CSS"
-        />
-    </div>
-    
-    <div>
-        
-        <ProjectFlex2
-            link=''
-            projecttitle='Game of PIG'
-            projectdesc="Interactive Web App | HTML/CSS"
-        />
 
-        <ProjectFlex2
-            link=''
-            projecttitle='Film Industry Statistics'
-            projectdesc="Interactive Web App | D3.js"
-        />
-        <ProjectFlex2
-            link=''
-            projecttitle='Madlibs'
-            projectdesc="Interactive Web App | HTML/CSS"
-        />
-
-        
-    </div>
-</section>
-{/if}
 
 </div>
 
@@ -255,19 +246,6 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-    }
-
-
-    .skeu-effect{
-        background-color: green;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(to top, var(--color1,orange) 0%, var(--color2,brown) 100%);
-        box-shadow: inset 0px -2px 2px 1px var(--color2,brown), inset 0px 2px 2px 1px var(--color1,orange), 0px 5px 4px -2px rgba(0,0,0,0.5);
-        position: relative;
-        transition: all 0.5s;
     }
 
     .landing{
@@ -329,24 +307,6 @@
         gap: var(--spacing4);
     }
 
-    .visible{
-        animation: show var(--animationquick) ease-in-out forwards;
-    }
-
-    .hidden{
-        display: none;
-    }
-
-    .gallery2{
-        margin: var(--spacing4);
-        min-width: auto;
-        min-height: 100vh;
-        position: relative;
-        place-content: center;
-        justify-items: center;
-        text-align: center;
-    }
-
 
     @media screen and (min-width: 600px) {
     /* CSS rules to apply when the screen width is 600px or less */
@@ -389,7 +349,7 @@
         background: brown;
         transform: rotate(-2deg);
         position: absolute;
-        transform: translate(0, -50%) rotate(-2deg);
+        transform: translate(-5px, -50%) rotate(-2deg);
         z-index: 5;
         /* box-shadow: inset 0px 0px 30px 6px #452701;
         text-shadow: 0px -5px 15px orange, 0px 0px 3px #FF9800; */

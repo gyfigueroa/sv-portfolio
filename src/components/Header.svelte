@@ -23,13 +23,17 @@
         position: sticky;
         left: var(--spacing4);
         top: var(--spacing4);
-        z-index: 1;
+        z-index: 4;
         transition: all var(--animationquick) ease;
         margin: var(--spacing2);
+        box-shadow: inset 0px -3px 3px 3px var(--lime100, lime), inset 0px 3px 3px 3px var(--forestgreen, forestgreen), 0px 5px 4px -2px rgba(0,0,0,0.5), inset 0px 20px 20px -11px var(--lime100, lime);
     }
 
     header:hover{
         width: 220px;
+        background: var(--forestgreen);
+        box-shadow: none;
+
         /* height: calc(2 * var(--spacing5)); */
         transform-origin: top left;
         transform: scale(1.25);

@@ -1,4 +1,6 @@
 <script>
+    import { fade, fly } from 'svelte/transition';
+
     export let link;
     export let img = 'img/placeholder.svg';
 
@@ -6,14 +8,16 @@
     export let projecthook = '';
     export let projectdesc = '';
 
+    
+
     $: projectClass = projecthook !== '' && projectdesc === '' 
         ? 'core' 
         : projecthook === '' && projectdesc !== '' 
         ? 'supplemental' 
         : '';</script>
 
-<a href="{link}">
-    <div class="project-container {projectClass}">
+<a href="{link}" in:fly={{ y: 200 }} out:fade>
+    <div class="project-container {projectClass}" >
         {#if projectClass == 'core'}
         <img src={img} alt='' class="sidebar-item">
         {:else if projectClass == 'supplemental'}
@@ -25,7 +29,7 @@
         <div class="main-content">
             <p class="project-title">{projecttitle}</p>
             {#if projecthook !== ''}
-            <p class="project-hook">{projecthook}</p>
+            <p class="project-hook">{@html projecthook}</p>
             {:else if projectdesc !==''}
             <p class="project-desc">{projectdesc}</p>
             {/if}

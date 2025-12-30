@@ -1,4 +1,6 @@
 <script>
+    import { fade, fly } from 'svelte/transition';
+    
     export let link;
     export let img = 'img/placeholder.svg';
     export let aspectratio = '1/1';

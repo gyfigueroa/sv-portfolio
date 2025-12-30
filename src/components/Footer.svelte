@@ -22,7 +22,6 @@
         width: auto;
         height: 400px;
         margin: 0 var(--spacing4);
-        padding: var(--spacing5);
         border-radius: var(--spacing5) var(--spacing5) 0 0;
         display: flex;
         flex-direction: column;
@@ -30,9 +29,12 @@
         justify-content: center;
     }
 
+    .hero-text{
+        margin: 0;
+    }
 
 
     footer > .hero-serif{
-        margin-top: -10px;
+        margin-top: -2px;
     }
 </style>

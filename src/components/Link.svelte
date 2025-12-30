@@ -36,6 +36,10 @@
         transition: background-color var(--animationquick), gap var(--animationquick);
     }
 
+    .hero-text{
+        margin: 0;
+    }
+
     .link:hover{
         background-color: var(--lime50);
         /* gap: var(--spacing2); */

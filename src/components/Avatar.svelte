@@ -5,15 +5,10 @@
     import { onMount } from "svelte";
     import { blur, scale } from "svelte/transition";
 
-    const outerOuterMin = -40;
-    const outerOuterMax = 40;
+    const outerOuterMin = -45;
+    const outerOuterMax = 45;
     const outerInnerMin = -35;
     const outerInnerMax = 35;
-
-    const innerOuterMin = -20;
-    const innerOuterMax = 40;
-    const innerInnerMin = -15;
-    const innerInnerMax = 15;
 
     const usedPositions = [];
     const MIN_DISTANCE = 20;
@@ -30,13 +25,6 @@
     function getRandomDecimalFixed(min, max, decimals) {
         const randomNumber = Math.random() * (max - min) + min;
         return parseFloat(randomNumber.toFixed(decimals));
-    }
-
-    function getQuadrant(x, y) {
-        return {
-            xSign: x >= 0 ? 1 : -1,
-            ySign: y >= 0 ? 1 : -1
-        };
     }
 
     function getRandomOuterPositionPair() {
@@ -77,29 +65,6 @@
     }
 
 
-
-    function getRandomInnerPositionSameQuadrant(xOuter, yOuter) {
-        const { xSign, ySign } = getQuadrant(xOuter, yOuter);
-
-        let x, y;
-        let attempts = 0;
-        const MAX_ATTEMPTS = 40;
-
-        do {
-            x = getRandomIntInclusive(0, innerOuterMax) * xSign;
-            y = getRandomIntInclusive(0, innerOuterMax) * ySign;
-            attempts++;
-        } while (
-            (
-                Math.abs(x) <= innerInnerMax &&
-                Math.abs(y) <= innerInnerMax
-            ) ||
-            isTooCloseInner(x,y)
-        );
-        usedInnerPositions.push({x, y});
-        return { x, y };
-    }
-
     function randomizeValues() {
         const { x: x1, y: y1 } = getRandomOuterPositionPairNonOverlapping();
         const x2 = parseFloat((x1/getRandomDecimalFixed(SCALE_MIN, SCALE_MAX, 2)).toFixed(2));
@@ -127,9 +92,6 @@
             const currID = emoji.id;
             emoji.style.background = `linear-gradient(to top, var(--${currID}1,#3acfd5) 0%, var(--${currID}2, #3a4ed5) 100%)`;
             emoji.style.boxShadow = `inset 0px -3px 3px 3px var(--${currID}2, #3a4ed5), inset 0px 3px 3px 3px var(--${currID}1,#3acfd5), 0px 5px 3px -3px rgba(0,0,0,0.75)`;
-            /*  */
-            /* wrapper.style.zIndex = -1; */
-            /* wrapper.style.opacity = 0; */
             wrapper.animate(
                 [
                     // keyframes
@@ -145,8 +107,6 @@
                     easing: "ease"
                 }
             );
-            /* wrapper.style.zIndex = 2; */
-            /* wrapper.style.opacity = 1; */
             delayFactor++;
         });
     });
@@ -232,7 +192,6 @@
     .avatar-container{
         width: 100%;
         height: 100%;
-/*         z-index: 10; */
         position: relative;
         transition: transform var(--animationquick) ease-in-out;
     }

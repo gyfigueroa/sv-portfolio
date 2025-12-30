@@ -19,7 +19,9 @@
     export let role5='';
     export let names5='';
 
-    export let textHTML;
+    export let text = '';
+    export let text2 = '';
+    export let text3 = '';
     export let img;
 
     export let link = '';
@@ -65,8 +67,17 @@
             </div>
             {/if}
         </div>
-        <div class="right-content hero-text">
-            {@html textHTML}
+        <div class="right-content">
+            {#if text !== ''}
+            <p class="hero-text">{text}</p>
+            {/if}
+            {#if text2 !== ''}
+            <p class="hero-text">{text2}</p>
+            {/if}
+            {#if text3 !== ''}
+            <p class="hero-text">{text3}</p>
+            {/if}
+
             <!-- <p class="hero-text">{text}</p>
             {#if link !== '' && linktext !== ''}
             <Link link="{link}" linktext="{linktext}"/>

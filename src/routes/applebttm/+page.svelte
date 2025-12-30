@@ -13,7 +13,7 @@
     title="Applebttm"
     role="DES 112"
     names='Gabriel Figueroa'
-    textHTML="<p>Applebttm is a music review and discovery platform inspired by Goodreads and Letterboxd, designed to let users share opinions, rate albums, and uncover new artists. Built around intuitive navigation and streamlined onboarding, the app balances social engagement with simplicity to reduce cognitive overload.</p>"
+    text="Applebttm is a music review and discovery platform inspired by Goodreads and Letterboxd, designed to let users share opinions, rate albums, and uncover new artists. Built around intuitive navigation and streamlined onboarding, the app balances social engagement with simplicity to reduce cognitive overload."
     img="img/applebttm/header.webp"
 />
 
@@ -24,7 +24,7 @@
             <p>Applebttm is a music review and discovery platform designed to fill a gap in the digital landscape: while Goodreads (books) and Letterboxd (films) exist, there has been no equivalent for music. Applebttm enables users to rate albums, write reviews, make lists, and discover new artists through a socially engaging, intuitive interface. This project was developed as a project for DES 112 at UC Davis, where I led UX research, prototyping, and usability testing.</p>
         </div>
 
-        <div class="img-slider margin3" id="a2">
+        <div class="slider margin3" id="a2">
             <img src="img/applebttm/mockup1.webp" alt="" class="img-border " >
         </div>
 
@@ -80,7 +80,7 @@
             
         </div>
 
-        <div class="img-slider margin3" id="b2">
+        <div class="slider margin3" id="b2">
             <img src="img/applebttm/mockup2.webp" alt="" class="img-border " >
         </div>
 

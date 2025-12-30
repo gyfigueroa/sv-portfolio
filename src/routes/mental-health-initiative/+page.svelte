@@ -13,7 +13,8 @@
     names="Gabriel Figueroa"
     role2="Lead Designer"
     names2="Joyce Pau"
-    textHTML="<p>The theme for Mental Health Initiative's 2025 Mental Health Conference is “Bloom As You Are”. A flower going through many stages like being planted, budding, and blooming to reach its true self is a philosophy the Mental Health Initiative wanted to spotlight with this year's theme.</p><p>I led the creative direction for the flower-studded, groovy identity we went with for all the deliverables on this project including a T-shirt, tote bag, social media posts, and an event brochure to guide attendees through the whole day.</p>"
+    text="The theme for Mental Health Initiative's 2025 Mental Health Conference is “Bloom As You Are”. A flower going through many stages like being planted, budding, and blooming to reach its true self is a philosophy the Mental Health Initiative wanted to spotlight with this year's theme."
+    text2="I led the creative direction for the flower-studded, groovy identity we went with for all the deliverables on this project including a T-shirt, tote bag, social media posts, and an event brochure to guide attendees through the whole day."
     img='img/mhi/mhi-hero-image-3.svg'
 />
 
