@@ -150,7 +150,7 @@
     }
 
     label{
-        cursor: url('img/link-cursor.svg'), auto;
+        cursor: url('/img/link-cursor.svg'), auto;
     }
 
     /* .s--multi legend {

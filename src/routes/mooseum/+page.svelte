@@ -18,7 +18,7 @@
     names3='Aggie Studios'
     text="The Moovin' Mooseum is the newest public art program highlighting both Aggie Arts and Unitrans' commitment to sustainability and connecting its community. With its student-led curation team, the Mooseum swapped its interior ad carts for drawings and creations of local artists. I led the creative direction of a full exterior wrap that captured the unique Davis community and showcases the many resources ASUCD, Unitrans' parent organization, has to offer students. My team and I aimed to create a vibrant, playful twist on the classic red Unitrans bus that reflects the friendly and inviting nature of the campus community. The logos and icons “sticker-ed” onto the bus are connected by a dotted line mirroring ASUCD's motto: “Connecting the dots”."
     img="img/mooseum/67f2f56286b62a2ae012baae_P1088585.avif"
-    link='#'
+    link='https://theaggie.org/2024/11/01/unitrans-unveils-asucds-new-moo-vin-moo-seum/'
     linktext='Featured in The California Aggie'
 />
 

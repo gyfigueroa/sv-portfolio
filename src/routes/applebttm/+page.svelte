@@ -106,7 +106,7 @@
         <div id="g">
             <h1>Impact & Takeaways</h1>
             <p>Applebttm reinforced the importance of iterative testing—what seems obvious to a designer may be confusing to users. I learned how critical it is to balance engagement with clarity, especially in socially driven platforms. The project also gave me hands-on experience with prototyping in Figma and running usability tests that directly informed design decisions.</p>
-            <Link link="#" linktext="View full prototype" transparency="no"/>
+            <Link link="https://www.figma.com/proto/GR1Z25ERQac8MfoGEAM6C7/DES-112-P2?page-id=0%3A1&node-id=141-118&starting-point-node-id=141%3A118&t=faox0a9C5i1QHu5n-1" linktext="View full prototype" transparency="no"/>
         </div>
 
         <div class="slider" id="c2">

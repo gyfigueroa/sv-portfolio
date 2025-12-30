@@ -23,6 +23,7 @@
 	},
 	"dependencies": {
 		"@leveluptuts/svelte-fit": "^1.0.3",
-		"@sveltejs/adapter-vercel": "^6.2.0"
+		"@sveltejs/adapter-vercel": "^6.2.0",
+		"@vercel/analytics": "^1.6.1"
 	}
 }

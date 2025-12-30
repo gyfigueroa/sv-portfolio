@@ -5,6 +5,7 @@
     import Header from "../components/Header.svelte";
     import Avatar from "../components/Avatar.svelte";
     import Switch from "../components/Switch.svelte";
+    import { onMount } from "svelte";
 
     import { fade, fly } from 'svelte/transition';
 
@@ -16,7 +17,9 @@
         return Math.floor(Math.random() * (max - min + 1)) + min; // The maximum is inclusive and the minimum is inclusive
     }
 
-    let glassBG = getRandomIntInclusive(1,10);
+    let glassBG = 1;
+    glassBG = getRandomIntInclusive(1,10);
+    
 
 </script>
 
@@ -230,7 +233,7 @@
     .landing{
         width: 100vw;
         height: calc(100vh + 100px);
-        background-image: url("img/glass.gif");
+        background-color: #1F5526;
         background-position: center;
         background-size: cover;
         display: grid;

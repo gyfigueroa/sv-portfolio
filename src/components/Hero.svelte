@@ -78,10 +78,10 @@
             <p class="hero-text">{text3}</p>
             {/if}
 
-            <!-- <p class="hero-text">{text}</p>
+            
             {#if link !== '' && linktext !== ''}
-            <Link link="{link}" linktext="{linktext}"/>
-            {/if} -->
+            <Link link="{link}" linktext="{linktext}" transparency='no'/>
+            {/if}
             
         </div>
     </div>
@@ -91,7 +91,7 @@
     .hero-container{
         width: 100vw;
         height: 100vh;
-        background-image: url("img/placeholder.svg");
+        background-image: url("/img/placeholder.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

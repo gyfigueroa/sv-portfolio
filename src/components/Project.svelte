@@ -1,7 +1,7 @@
 <script>
 
     export let link;
-    export let img = 'img/placeholder.svg';
+    export let img = '/img/placeholder.svg';
     export let target='';
 
     export let projecttitle;

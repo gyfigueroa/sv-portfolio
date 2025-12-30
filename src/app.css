@@ -61,10 +61,10 @@ body {
   text-wrap: wrap;
   font: var(--p);
   background: var(--smoke);
-  background-image: url("img/dotgrid.svg");
+  background-image: url(/img/dotgrid.svg);
   background-repeat: repeat;
   color: var(--forestgreen);
-  cursor: url("img/cursor.svg"), auto;
+  cursor: url("/img/cursor.svg"), auto;
 }
 
 .underline {
@@ -177,7 +177,7 @@ a {
 }
 a:hover {
   color: var(--color30);
-  cursor: url('img/link-cursor.svg'), auto;
+  cursor: url('/img/link-cursor.svg'), auto;
 }
 .btn,
 button {
@@ -190,7 +190,7 @@ button {
   border-radius: var(--spacing2);
   border-bottom: solid var(--spacing1) var(--accent);
   font: var(--p);
-  cursor: url('img/link-cursor.svg'), auto;
+  cursor: url('/img/link-cursor.svg'), auto;
 }
 .btn:hover,
 button:hover {
@@ -311,7 +311,7 @@ section {
 .project-container > img {
     object-fit: cover;
     border-radius: 10px;
-    background-image: url("img/placeholder.svg");
+    background-image: url("/img/placeholder.svg");
 }
 
 .absolute-center{
