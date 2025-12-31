@@ -4,6 +4,10 @@
     import Footer from "../../components/Footer.svelte";
 </script>
 
+<svelte:head>
+    <title>Nu Alpha Kappa • Gabriel Figueroa Design</title>
+</svelte:head>
+
 <Header/>
 
 <Hero

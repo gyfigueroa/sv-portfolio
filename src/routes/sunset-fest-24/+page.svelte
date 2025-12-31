@@ -4,6 +4,10 @@
     import Footer from "../../components/Footer.svelte";
 </script>
 
+<svelte:head>
+    <title>Sunset Fest 2024 • Gabriel Figueroa Design</title>
+</svelte:head>
+
 <Header/>
 
 <Hero

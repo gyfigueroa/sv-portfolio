@@ -5,6 +5,10 @@
     import Link from "../../components/Link.svelte";
 </script>
 
+<svelte:head>
+    <title>Applebttm • Gabriel Figueroa Design</title>
+</svelte:head>
+
 <Header/>
 
 <Hero

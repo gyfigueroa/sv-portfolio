@@ -5,7 +5,6 @@
     import Header from "../components/Header.svelte";
     import Avatar from "../components/Avatar.svelte";
     import Switch from "../components/Switch.svelte";
-    import { onMount } from "svelte";
 
     import { fade, fly } from 'svelte/transition';
 
@@ -22,6 +21,10 @@
     
 
 </script>
+
+<svelte:head>
+    <title>Gabriel Figueroa Design</title>
+</svelte:head>
 
 <div class="landing" style="background-image: url('img/glass-bg/{glassBG}.webp')">
     <div class="left-col" style="background-image: url('img/horizontal-film-dithered.gif'); position:relative">

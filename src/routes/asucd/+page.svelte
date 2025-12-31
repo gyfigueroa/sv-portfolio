@@ -3,6 +3,9 @@
     import Header from "../../components/Header.svelte";
     import Footer from "../../components/Footer.svelte";
 </script>
+<svelte:head>
+    <title>ASUCD • Gabriel Figueroa Design</title>
+</svelte:head>
 
 <Header/>
 
@@ -46,9 +49,9 @@
         <img src="img/asucd/Brand Assets.jpg" alt="" class="gallery-img">
         <img src="img/asucd/UnitSignatures.jpg" alt="" class="gallery-img">
         <img src="img/asucd/ASUCD_SpringEvents_TradingCards_v5_NP-01.png" alt="" id="trading-card-1">
-        <img src="img/asucd//ASUCD_SpringEvents_TradingCards_v5_NP-02.png" alt="" id="trading-card-2">
-        <img src="img/asucd//ASUCD_SpringEvents_TradingCards_v5_NP-04.png" alt="" id="trading-card-3">
-        <img src="img/asucd//ASUCD_SpringEvents_TradingCards_v5_NP-03.png" alt="" id="trading-card-4">
+        <img src="img/asucd/ASUCD_SpringEvents_TradingCards_v5_NP-02.png" alt="" id="trading-card-2">
+        <img src="img/asucd/ASUCD_SpringEvents_TradingCards_v5_NP-04.png" alt="" id="trading-card-3">
+        <img src="img/asucd/ASUCD_SpringEvents_TradingCards_v5_NP-03.png" alt="" id="trading-card-4">
 
         <img src="img/asucd/HoloSticker.png" alt="" class="sticker" id="holo-sticker">
         <img src="img/asucd/ASUCD_AssortedStickersKeychains_v2_NP-04-2.png" alt="" class="sticker" id="ghibli-sticker">

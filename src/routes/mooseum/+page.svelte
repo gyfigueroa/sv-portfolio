@@ -5,6 +5,10 @@
     import Link from "../../components/Link.svelte";
 </script>
 
+<svelte:head>
+    <title>Moo-vin' Moo-seum' • Gabriel Figueroa Design</title>
+</svelte:head>
+
 
 <Header/>
 <Hero

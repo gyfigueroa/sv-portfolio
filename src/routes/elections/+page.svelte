@@ -3,6 +3,9 @@
     import Header from "../../components/Header.svelte";
     import Footer from "../../components/Footer.svelte";
 </script>
+<svelte:head>
+    <title>ASUCD Elections • Gabriel Figueroa Design</title>
+</svelte:head>
 
 <Header/>
 

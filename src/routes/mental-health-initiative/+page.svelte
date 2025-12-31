@@ -4,6 +4,10 @@
     import Footer from "../../components/Footer.svelte";
 </script>
 
+<svelte:head>
+    <title>Mental Health Initiative • Gabriel Figueroa Design</title>
+</svelte:head>
+
 <Header/>
 
 <Hero
