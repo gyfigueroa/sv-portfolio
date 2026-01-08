@@ -20,8 +20,8 @@
     names3='Nicole Paja, Sara Galvis, Emilee Lu'
     role4='Social Media'
     names4='Amy Gonzalez'
-    text="ASUCD's student government elections had historically struggled with low voter turnout, so our team was tasked with reimagining the brand identity to spark new interest. For the Spring 2024 cycle, I co-led creative direction and drove design ideation, introducing a playful visual system built on friendly, bouncy 3D shapes that replaced the prior disjointed identity. The system's flexibility allowed it to scale seamlessly into the Fall 2024 cycle, creating a cohesive and inviting brand across both elections."
-    text2="This new identity led to a 10% increase in voter turnout from previous cycles, a total of 24% of the student population voted."
+    text="ASUCD student government elections had historically struggled with low voter turnout, prompting a need to reimagine how the elections connected with students. For the Spring 2024 cycle, I co-led creative direction and design ideation, introducing a playful visual identity built around friendly, bouncy 3D forms to replace the previous disjointed system."
+    text2="The flexible design language scaled seamlessly into the Fall 2024 cycle, creating a cohesive and recognizable presence across multiple election periods. The refreshed identity contributed to a 10% increase in voter turnout, with 24% of the student population participating — a meaningful and rewarding shift in civic engagement on campus."
     img="img/elections/Stickers.avif"
 />
 

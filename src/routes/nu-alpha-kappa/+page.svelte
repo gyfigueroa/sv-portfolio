@@ -15,7 +15,8 @@
     title="Nu Alpha Kappa Fraternity"
     role="Director of Marketing"
     names="Gabriel Figueroa"
-    text="As Director of Marketing for Nu Alpha Kappa (Kappa Chapter), I led the design and strategy behind our chapter's recruitment and philanthropy communications from 2023–2024. My work spanned digital and print design, social media campaigns, and coordination with the National Board, resulting in a cohesive brand presence that elevated our chapter's visibility through polished flyers, engaging posts, and consistent visual storytelling."
+    text="As Director of Marketing for Nu Alpha Kappa (Kappa Chapter), I led the design and strategy behind recruitment, philanthropy, and community outreach efforts from 2023–2024. My work spanned digital and print design, social media campaigns, and coordination with the National Board to ensure brand consistency across all touchpoints."
+    text2="Through polished visual systems, engaging content, and consistent storytelling, we strengthened the chapter’s presence on campus while supporting large-scale events, partnerships, and community initiatives."
     img='img/nak/NAK-hero.svg'
 />
 

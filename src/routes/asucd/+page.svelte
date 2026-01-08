@@ -21,9 +21,11 @@
     role4="Copywriters"
     names4="Daniella Campuzano, Tanika Anbuchelvan"
     img="img/asucd/asucd-hero-image.svg"
-    text="ASUCD is more than just the student government at the University of California, Davis. The largest student run organization is the campus coffee shop, the bike repair store, and the city wide bus system. “Building tomorrow together” is just one of ASUCD’s mantras that guides how the wide range of student opportunities it creates elevates the whole student experience on campus."
-    text2="In previous years, ASUCD has maintained a distinct identity from the university’s branding. This year, to gain more access to university resources for our students, I led the shift to refresh ASUCD’s brand to align more closely with the university’s and also unify the internal branding of many of ASUCD’s sub-organizations (units, committees, and commissions)."
-    text3="On top of the changes to ASUCD’s brand we also added a new asset to our brand, our new cow Dottie! Designed to make ASUCD’s brand more cohesive, Dottie strengthens ASUCD’s identity and messaging while reinforcing their “by students, for students” mission. Dottie is more than just a cow—Dottie represents a student actively engaging with ASUCD units. The aim of this cow is to resonate with students and bridge the gap between ASUCD and the student community."
+    text="ASUCD is more than student government at the University of California, Davis — it operates the campus coffee shop, bike repair store, and citywide bus system, making it the largest student-run organization in the U.S. Guided by the mantra “Building tomorrow together,” ASUCD creates opportunities that shape the daily student experience across campus."
+    text2="To expand access to university resources and address long-standing inconsistencies across its many sub-organizations, I led a comprehensive brand refresh to better align ASUCD with UC Davis while unifying the visual identities of over 30 internal units, committees, and commissions."
+    text3="As part of this effort, we introduced Dottie, a new mascot designed to humanize the brand and reinforce ASUCD’s “by students, for students” mission. More than a visual asset, Dottie represents an engaged student navigating ASUCD’s ecosystem — bridging the gap between institution and community through a cohesive, playful, and scalable brand system."
+    linktext="View the updated brand guide"
+    link="https://ucdavis.app.box.com/s/xowxwqip8wxsh4ngr6cci0ueou3x17hy"
 />
 
 

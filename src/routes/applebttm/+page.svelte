@@ -16,7 +16,7 @@
     title="Applebttm"
     role="DES 112"
     names='Gabriel Figueroa'
-    text="Applebttm is a music review and discovery platform inspired by Goodreads and Letterboxd, designed to let users share opinions, rate albums, and uncover new artists. Built around intuitive navigation and streamlined onboarding, the app balances social engagement with simplicity to reduce cognitive overload."
+    text="Applebttm is a music review and discovery platform inspired by Goodreads and Letterboxd, designed to help users share opinions, rate albums, and discover new artists. Built with an emphasis on intuitive navigation and streamlined onboarding, the app balances social interaction with simplicity, reducing cognitive overload while encouraging exploration and community-driven discovery."
     img="img/applebttm/header.webp"
 />
 
