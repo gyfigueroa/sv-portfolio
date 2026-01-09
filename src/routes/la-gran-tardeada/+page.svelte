@@ -20,6 +20,8 @@
     img='img/la-gran-tardeada/cover.svg'
 />
 
+<div class="grid-bg">
+
 <section>
     <div class="gallery">
         <img src="img/la-gran-tardeada/LaGranTardeadaPoster.webp" alt="" class="gallery-img">
@@ -28,6 +30,8 @@
 </section>
 
 <Footer/>
+
+</div>
 
 <style>
 .gallery{

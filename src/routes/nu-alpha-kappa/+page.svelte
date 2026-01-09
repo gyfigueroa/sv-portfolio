@@ -20,6 +20,8 @@
     img='img/nak/NAK-hero.svg'
 />
 
+<div class="grid-bg">
+
 <section>
     <div class="gallery">
         <img src="img/nak/picnakday.webp" alt="" class="gallery-img" id="item-a">
@@ -90,6 +92,8 @@
 </section>
 
 <Footer/>
+
+</div>
 
 <style>
 .gallery{

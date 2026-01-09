@@ -6,9 +6,7 @@
     <title>darkroom • Gabriel Figueroa Design</title>
 </svelte:head>
 
-
-<div class="dark-bg">
-
+<div class="grid-bg">
 
 <Header/>
 
@@ -138,8 +136,11 @@
 </div>
 
 <style>
-    .dark-bg{
-        background: rgba(0, 0, 0, 0.9);
+
+    .grid-bg{
+        background: rgb(19 18 16);;
+        background-image: url(/img/dotgrid.svg);
+    background-repeat: repeat;
     }
     
     .gallery{

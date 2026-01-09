@@ -28,7 +28,7 @@
     link="https://ucdavis.app.box.com/s/xowxwqip8wxsh4ngr6cci0ueou3x17hy"
 />
 
-
+<div class="grid-bg">
 
 <section>
     <div class="gallery">
@@ -62,6 +62,8 @@
 </section>
 
 <Footer/>
+
+</div>
 
 <style>
 .gallery{

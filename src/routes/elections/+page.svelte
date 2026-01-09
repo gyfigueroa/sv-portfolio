@@ -25,6 +25,8 @@
     img="img/elections/Stickers.avif"
 />
 
+<div class="grid-bg">
+
 <section>
     <div class="gallery">
         <img src="img/elections/Spring-TableTent.avif" alt="" class="gallery-img">
@@ -37,6 +39,8 @@
 </section>
 
 <Footer/>
+
+</div>
 
 <style>
 

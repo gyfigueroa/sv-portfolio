@@ -16,8 +16,7 @@
         return Math.floor(Math.random() * (max - min + 1)) + min; // The maximum is inclusive and the minimum is inclusive
     }
 
-    let glassBG = 1;
-    glassBG = getRandomIntInclusive(1,10);
+    let glassBG = getRandomIntInclusive(1,10);
     
 
 </script>
@@ -90,6 +89,10 @@
         </div>    
     </div>
 </div>
+
+<div class="grid-bg">
+
+
 
 <Header/>
 
@@ -222,6 +225,7 @@
 
 <Footer/>
 
+</div>
 
 <style>
 
@@ -236,7 +240,8 @@
     .landing{
         width: 100vw;
         height: calc(100vh + 100px);
-        background-color: #1F5526;
+        /* background-color: #1F5526; */
+        background-image: url(/img/glass.gif);
         background-position: center;
         background-size: cover;
         display: grid;
@@ -336,10 +341,21 @@
         transform: rotate(-2deg);
         position: absolute;
         transform: translate(-5px, -50%) rotate(-2deg);
-        z-index: 5;
+        z-index: 6;
         /* box-shadow: inset 0px 0px 30px 6px #452701;
         text-shadow: 0px -5px 15px orange, 0px 0px 3px #FF9800; */
-        
+    }
+
+    .banner-anchor::after{
+        content:'';
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: var(--smoke);
+        box-shadow: 0px 0px 10px 10px var(--smoke);
+        top: 10px;
+        left: 20px;
+        z-index: 5;
     }
 
     .banner-element {

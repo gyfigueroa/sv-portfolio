@@ -27,7 +27,8 @@
     linktext='Featured in The California Aggie'
 />
 
-
+    
+<div class="grid-bg">
 
 <section>
     <div class="gallery">
@@ -41,6 +42,7 @@
 
 <Footer/>
 
+</div>
 
 
 <style>

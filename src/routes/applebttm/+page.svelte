@@ -20,8 +20,10 @@
     img="img/applebttm/header.webp"
 />
 
+<div class="grid-bg">
+
 <section>
-    <div class="article-grid margin3">
+    <div class="article-grid padding3">
         <div id="a">
             <h1>Overview</h1>
             <p>Applebttm is a music review and discovery platform designed to fill a gap in the digital landscape: while Goodreads (books) and Letterboxd (films) exist, there has been no equivalent for music. Applebttm enables users to rate albums, write reviews, make lists, and discover new artists through a socially engaging, intuitive interface. This project was developed as a project for DES 112 at UC Davis, where I led UX research, prototyping, and usability testing.</p>
@@ -123,6 +125,8 @@
 </section>
 
 <Footer/>
+
+</div>
 
 <style>
 

@@ -60,11 +60,15 @@ html {
 body {
   text-wrap: wrap;
   font: var(--p);
+  background: var(--forestgreen);
+  color: var(--forestgreen);
+  cursor: url("/img/cursor.svg"), auto;
+}
+
+.grid-bg{
   background: var(--smoke);
   background-image: url(/img/dotgrid.svg);
   background-repeat: repeat;
-  color: var(--forestgreen);
-  cursor: url("/img/cursor.svg"), auto;
 }
 
 .underline {

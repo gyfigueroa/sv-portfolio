@@ -34,6 +34,7 @@
         backdrop-filter: blur(5px);
         color: var(--lime100);
         transition: background-color var(--animationquick), gap var(--animationquick);
+        text-wrap: balance;
     }
 
     .hero-text{

@@ -22,7 +22,7 @@
     img='img/mhi/mhi-hero-image-3.svg'
 />
 
-
+<div class="grid-bg">
 
 <section>
     <div class="gallery">
@@ -33,6 +33,8 @@
 </section>
 
 <Footer/>
+
+</div>
 
 <style>
 .gallery{

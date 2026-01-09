@@ -20,8 +20,10 @@
     img="img/memorial-union/header.webp"
 />
 
+<div class="grid-bg">
+
 <section>
-    <div class="article-grid margin3">
+    <div class="article-grid padding3">
         <div id="a">
             <h1>Meet the team</h1>
         </div>
@@ -362,9 +364,9 @@
     </div>
 </section>
 
-
-
 <Footer/>
+
+</div>
 
 <style>
     :root{
