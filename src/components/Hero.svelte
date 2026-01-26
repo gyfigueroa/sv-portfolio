@@ -30,6 +30,7 @@
 </script>
 
 <div class="hero-container" style="background-image: url({img});">
+    <!-- <div class="hero-img" style="background-image: url({img});"></div> -->
     <div class="spacer"></div>
     <div class="project-details" >
         <div class="left-content">
@@ -90,23 +91,36 @@
 <style>
     .hero-container{
         width: 100vw;
-        height: 100vh;
         background-image: url("/img/placeholder.svg");
+        /* border-radius: 0px 0px 30px 30px; */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        position: sticky;
-        bottom: 0;
+        background-attachment: fixed;
+        position: relative;
         overflow: scroll;
         overflow-y: scroll;
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none;  /* Internet Explorer 10+ */
     }
 
+    .hero-container::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        backdrop-filter: blur(20px) contrast(1.25) brightness(0.9);
+        mask-image: linear-gradient(to top,black 10px, transparent 30px);
+        -webkit-mask-image: linear-gradient(to bottom, transparent calc(100vh - 100px), black calc(100vh + 100px));
+        pointer-events: none;
+    }
+
     .hero-container::-webkit-scrollbar { /* WebKit */
         width: 0;
         height: 0;
     }
+
 
     .spacer{
         height: 100vh;
@@ -126,6 +140,8 @@
         grid-template-rows: auto; /* Single row */
         color: var(--sand100);
         gap: var(--spacing4);
+        position: relative;
+        z-index: 3;
     }
 
     .credit {

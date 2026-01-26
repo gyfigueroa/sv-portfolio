@@ -24,17 +24,18 @@
     --smoke50: rgba(208, 215, 208, 0.5);
     --gray: rgb(158, 163, 158);
     --gray50: rgba(158, 163, 158, 0.5);
-    --ff: "Figtree", sans-serif;
+    --ff: "Funnel Sans","Figtree", sans-serif;
+    --ff1: "Funnel Display", var(--ff);
     --ff2: "Times New Roman", Times, serif;
-    --p: 500 1rem/1.25em var(--ff);
-    --h1: 700 2rem/1.1em var(--ff);
-    --h2: 600 1.75rem/1.1em var(--ff);
-    --label: 800 1rem/1.1em var(--ff);
-    --emphasis: 600 1.25rem/1.25em var(--ff);
-    --herotext: 600 1.25rem/1.1em var(--ff);
-    --herotitle: 800 2.5rem/1em var(--ff);
-    --projecttitle: 700 1.125rem/1em var(--ff);
-    --projecthook: 600 1.5rem/1em var(--ff);
+    --p: 400 1rem/1.5em var(--ff);
+    --h1: 700 3rem/1em var(--ff1);
+    --h2: 600 1.75rem/1.1em var(--ff1);
+    --label: 800 1.25rem/1.1em var(--ff);
+    --emphasis: 500 1.25rem/1.25em var(--ff); 
+    --herotext: 500 1.25rem/1.1em var(--ff);
+    --herotitle: 700 2.75rem/1em var(--ff1);
+    --projecttitle: 600 1.25rem/1em var(--ff);
+    --projecthook: 600 2rem/1em var(--ff1);
     --heroserif: 3.5rem/1em var(--ff2);
 
   /*   --herotext: 600 1.25rem/1.2em var(--ff);
@@ -76,6 +77,8 @@ body {
 } 
 h1 {
   font: var(--h1);
+  letter-spacing: -.025em;
+  margin: var(--spacing2) 0;
 }
 h2 {
   font: var(--h2);
@@ -95,7 +98,7 @@ h2 {
 
 .hero-title{
   font: var(--herotitle);
-  letter-spacing: -.05em;
+  letter-spacing: -.025em;
 }
 
 .hero-text{
@@ -104,7 +107,7 @@ h2 {
 
 .hero-serif{
   font: var(--heroserif);
-  letter-spacing: -.25rem;
+  letter-spacing: -0.08em;
 }
 
 .label{
@@ -122,7 +125,7 @@ p {
 }
 
 .icon{
-  height: var(--iconsmall);
+  height: 0.7em;
   width: auto;
 }
 
@@ -133,42 +136,35 @@ p {
       :root{
 
 
-        --p: 500 1rem/1.5em var(--ff);
-        --h1: 700 3rem/1em var(--ff);
-        --h2: 600 2.5rem/1em var(--ff);
+        /* --p: 400 1rem/1.5em var(--ff); */
+        /* --h1: 700 3rem/1em var(--ff1);
+        --h2: 600 2.5rem/1em var(--ff1);
         --label: 800 1.5rem/1.2em var(--ff);
         --emphasis: 600 1.5rem/1.25em var(--ff);
-        --herotext: 600 1.75rem/1.2em var(--ff);
-        --herotitle: 800 4rem/1em var(--ff);
+        
+        
         --projecttitle: 700 1.25rem/1em var(--ff);
-        --projecthook: 600 2rem/1em var(--ff);
+        ;
+         */
+        --herotitle: 700 4rem/1em var(--ff1);
         --heroserif: 6rem/1em var(--ff2);
-      }
-      .hero-serif{
-        font: var(--heroserif);
-        letter-spacing: -.5rem;
+        --herotext: 500 1.5rem/1.1em var(--ff);
       }
 
-      .hero-text{
+      /* .hero-text{
         margin: var(--spacing3) 0;
-      }
-
-      h1{
-        letter-spacing: -.1rem;
-      }
+      } */
 
 
-      .icon{
-        height: var(--iconmedium);
-      }
+
+      
 }
 
 /* LAPTOP FONT SIZE ADJUSTMENTS */
 
 @media screen and (min-width: 1000px) {
   :root{
-    --herotext: 600 2rem/1.2em var(--ff);
-    --herotitle: 800 8rem/1em var(--ff);
+    --herotitle: 700 6rem/1em var(--ff1);
   }
 }
 
@@ -299,24 +295,7 @@ section {
 
 
 
-.project-container{
-    background-color: var(--sand100);
-    gap: 10px;
-    padding: 10px;
-    border-radius: var(--spacing4);
-    /* border: solid 1px #9EA39E; */
-    box-shadow: 0px 0px 0px 1px var(--gray50), 0px 0px 30px 15px var(--smoke);
-}
 
-.project-container:hover{
-    box-shadow:0px 0px 0px var(--spacing2) var(--gray50), 0px 0px 30px 15px var(--smoke);
-}
-
-.project-container > img {
-    object-fit: cover;
-    border-radius: 10px;
-    background-image: url("/img/placeholder.svg");
-}
 
 .absolute-center{
   position: absolute;

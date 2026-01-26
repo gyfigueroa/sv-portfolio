@@ -1,4 +1,5 @@
 <script>
+    
     import Hero from "../../components/Hero.svelte";
     import Header from "../../components/Header.svelte";
     import Footer from "../../components/Footer.svelte";
@@ -8,9 +9,8 @@
 </svelte:head>
 
 <Header/>
-
-<Hero 
-    category="Integrated Advertising Campagin"
+<Hero
+    category="Integrated Advertising Campaign"
     title="ASUCD Elections"
     role="Project Managers"
     names="Alexander Motawi, Gabriel Figueroa"

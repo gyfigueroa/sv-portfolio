@@ -44,9 +44,28 @@
         display: flex;
         align-items: start; /* Align items to the top */
         gap: 1rem;
-        transition: box-shadow var(--animationquick);
+        transition: box-shadow var(--animationquick), border var(--animationquick);
     /*     margin: var(--spacing2); */
         /* max-width: 500px; */
+    }
+
+    .project-container{
+        background-color: var(--sand100);
+        gap: 10px;
+        padding: 10px;
+        border-radius: var(--spacing4);
+        /* border: solid 1px #9EA39E; */
+        box-shadow: 0px 0px 0px 1px var(--gray50), 0px 0px 30px 15px var(--smoke);
+    }
+
+    .project-container:hover{
+        box-shadow: 0px 0px 0px var(--spacing2) var(--gray50), 0px 0px 30px 15px var(--smoke);
+    }
+
+    .project-container > img {
+        object-fit: cover;
+        border-radius: 10px;
+        background-image: url("/img/placeholder.svg");
     }
 
     .core{

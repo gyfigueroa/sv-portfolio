@@ -11,7 +11,7 @@
 
 <Hero
     category="BRAND GUIDELIES, BRAND IDENTITY"
-    title='Associated Students of UC Davis (ASUCD)'
+    title='Associated Students of UC Davis'
     role='Project Manager'
     names='Gabriel Figueroa'
     role2="Lead Designers"

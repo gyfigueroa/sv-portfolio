@@ -99,7 +99,7 @@
 <div class="gallery-container margin4">
 
 
-<section class="toggle-container">
+<section class="toggle-container" style="margin-top: 60px">
     <Switch bind:value={multiValue} label="" design="multi" options={['brand', 'product']} fontSize={12}/>
 </section>
 
@@ -144,7 +144,7 @@
             link="/la-gran-tardeada"
             img="img/la-gran-tardeada/cover.svg"
             projecttitle="La Gran Tardeada"
-            projectdesc="Creative Direction • Merchandise, Graphic Design"
+            projectdesc="Design • Merchandise, Event Design"
         />
         <Project
             link="/mooseum"
@@ -156,7 +156,7 @@
             link="/nu-alpha-kappa"
             img="img/nak/NAK-hero.svg"
             projecttitle="Nu Alpha Kappa Fraternity Inc."
-            projectdesc="Creative Direction • Print & Social Media Campaigns"
+            projectdesc="Design • Print & Social Media Campaigns"
         />
     </div>
     {:else if multiValue == "product"}
@@ -306,13 +306,9 @@
             grid-template-rows: auto;
         }
 
-        .main-gallery{
-            grid-template-columns: 1fr;
-        }
-
     }
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
     /* CSS rules to apply when the screen width is 600px or less */
         .landing {
             grid-template-columns: 1fr 1fr;
@@ -352,7 +348,7 @@
         height: 50px;
         position: absolute;
         background-color: var(--smoke);
-        box-shadow: 0px 0px 10px 10px var(--smoke);
+        box-shadow: 0px 0px 20px 20px var(--smoke);
         top: 10px;
         left: 20px;
         z-index: 5;
@@ -360,11 +356,12 @@
 
     .banner-element {
         color: orange;
-        padding: 20px 5px 10px;
-        height: 70px;
+        padding: 20px 10px;
+        height: 0.8em;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 6rem;
 
         /* font-size: 40pt;
         font-family: "Yesteryear", cursive; */

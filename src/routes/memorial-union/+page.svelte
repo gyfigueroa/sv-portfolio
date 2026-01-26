@@ -14,10 +14,12 @@
     category="UI/UX Case Study"
     title="UC Davis Memorial Union App"
     role="Design Interactive"
-    names='Spring 2023 Cohort'
+    names='Spring Cohort'
     text="The Memorial Union (MU) is a central hub of student life at UC Davis, providing spaces for students to study, gather, and connect with campus resources. Over a six-week sprint, our team followed a human-centered design process to create a mobile application that highlights what the MU offers and makes key information more accessible to students."
     text2="The project was awarded Most Customer-Centric UX by a panel of industry professionals, recognizing its clarity, usability, and student-focused design approach."
     img="img/memorial-union/header.webp"
+    link="https://www.figma.com/proto/Kny3Y34Q5DVpwydikFT18p/DI-Team-Sprint-Workspace---Memorial-Union?page-id=3%3A3&node-id=3666-11804&p=f&viewport=149%2C1948%2C0.04&t=ADr2lzxlINWfVJbB-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3666%3A11804&show-proto-sidebar=1"
+    linktext="View full prototype"
 />
 
 <div class="grid-bg">
@@ -353,7 +355,9 @@
                 <li>Providing context for users to easily navigate through the app while avoiding cognitive overload</li>
                 <li>Creating an interactive map of the MU without sacrificing UI</li>
             </ul>
+        </div>
 
+        <div id="az">
             <h1>Next steps</h1>    
             <ol>
                 <li><b>Conduct more user research on faculty and visitors.</b><br>Since our respondents are nearly all students, we are missing data on staff and visitors, which are some of the demographics that also utilize the MU. Thus, if we had more time, we would like to learn more about how they interact with the MU and expand the scope of the app to accommodate them and their needs.</li>
@@ -406,12 +410,15 @@
         "w w2"
         "x x2"
         "y y2"
-        "z .";
+        "z az"
+        ". .";
     }
 
     @media screen and (max-width: 600px) {
         .article-grid{
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 30px
         }
     }
 
@@ -630,5 +637,9 @@
 
     #z{
         grid-area: z;
+    }
+
+    #az{
+        grid-area: az;
     }
 </style>

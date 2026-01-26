@@ -18,6 +18,8 @@
     names='Gabriel Figueroa'
     text="Applebttm is a music review and discovery platform inspired by Goodreads and Letterboxd, designed to help users share opinions, rate albums, and discover new artists. Built with an emphasis on intuitive navigation and streamlined onboarding, the app balances social interaction with simplicity, reducing cognitive overload while encouraging exploration and community-driven discovery."
     img="img/applebttm/header.webp"
+    link="https://www.figma.com/proto/GR1Z25ERQac8MfoGEAM6C7/DES-112-P2?page-id=0%3A1&node-id=141-118&starting-point-node-id=141%3A118&t=faox0a9C5i1QHu5n-1"
+    linktext="View full prototype"
 />
 
 <div class="grid-bg">
@@ -148,7 +150,9 @@
     }
     @media screen and (max-width: 600px) {
         .article-grid{
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 30px
         }
     }
 

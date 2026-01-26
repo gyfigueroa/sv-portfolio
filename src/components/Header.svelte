@@ -1,13 +1,28 @@
 
-<a href="/">
-    <header>
-        <img class="home-icon" src="img/home.svg" alt="">
-        <p class="hero-serif">G<i>a</i>br<i>i</i>el Fig<i>u</i>er<i>o</i>a</p>
-    </header>
-</a>
+    <a href="/">
+        <div class="sticky-container">
+        <header>
+            <img class="home-icon" src="img/home.svg" alt="">
+            <p class="hero-serif">G<i>a</i>br<i>i</i>el Fig<i>u</i>er<i>o</i>a</p>
+        </header>
+        </div>
+    </a>
+
+    
+
 
 
 <style>
+
+    .sticky-container{
+        position: sticky;
+        margin-left: var(--spacing4);
+        top: var(--spacing4);
+        height: 0px;
+        z-index: 4;
+    }
+
+
     header{
         border-radius: var(--spacing5);
         background-color: var(--forestgreen);
@@ -20,12 +35,8 @@
         width: 50px;
         height: 50px;
         overflow: hidden;
-        position: sticky;
-        left: var(--spacing4);
-        top: var(--spacing4);
-        z-index: 4;
         transition: all var(--animationquick) ease;
-        margin: var(--spacing2);
+        /* margin: var(--spacing2); */
         box-shadow: inset 0px -3px 3px 3px var(--lime100, lime), inset 0px 3px 3px 3px var(--forestgreen, forestgreen), 0px 5px 4px -2px rgba(0,0,0,0.5), inset 0px 20px 20px -11px var(--lime100, lime);
     }
 
