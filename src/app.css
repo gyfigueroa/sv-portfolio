@@ -11,6 +11,7 @@
 :root{
     --forestgreen: rgb(0, 44, 33);
     --forestgreen90: rgba(0, 44, 33, 0.9);
+    --forestgreen50: rgba(0, 44, 33, 0.5);
     --lime: 149, 255, 0;
     --lime100: rgb(var(--lime));
     --lime50: rgba(var(--lime), 0.5);

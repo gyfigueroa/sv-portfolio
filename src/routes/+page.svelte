@@ -5,6 +5,7 @@
     import Header from "../components/Header.svelte";
     import Avatar from "../components/Avatar.svelte";
     import Switch from "../components/Switch.svelte";
+    import { onMount } from "svelte";
 
     import { fade, fly } from 'svelte/transition';
 
@@ -16,7 +17,12 @@
         return Math.floor(Math.random() * (max - min + 1)) + min; // The maximum is inclusive and the minimum is inclusive
     }
 
-    let glassBG = getRandomIntInclusive(1,10);
+    let glassBG;
+
+    onMount(() => {
+        glassBG.style.backgroundImage= `url('img/glass-bg/${getRandomIntInclusive(1, 10)}.webp')`
+    })
+    
     
 
 </script>
@@ -25,7 +31,7 @@
     <title>Gabriel Figueroa Design</title>
 </svelte:head>
 
-<div class="landing" style="background-image: url('img/glass-bg/{glassBG}.webp')">
+<div class="landing" bind:this={glassBG}>
     <div class="left-col" style="background-image: url('img/horizontal-film-dithered.gif'); position:relative">
         <Avatar/>
     </div>
@@ -267,7 +273,7 @@
     .left-col{
         background-color: var(--sand50);
         box-shadow: 0px 0px 0px 1px var(--smoke50);
-        backdrop-filter: blur(10px);
+        backdrop-filter:  blur(5px) saturate(2.5);
         z-index: 1;
     }
 
@@ -276,9 +282,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: var(--forestgreen90);
-        backdrop-filter: blur(10px);
-        box-shadow: 0px 0px 0px 1px var(--smoke50)
+        background-color: var(--forestgreen50);
+        backdrop-filter:  blur(5px) saturate(2.5);
+        box-shadow: 0px 0px 0px 1px var(--smoke50), inset 0px 0px 20px var(--forestgreen50);
     }
 
     .gallery-container{
