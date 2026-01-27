@@ -144,12 +144,12 @@
         content: '';
         position: absolute;
         width: 100%;
-        height: 110%;
+        height: 120%;
         bottom: 0;
         left: 0;
-        backdrop-filter: blur(20px) contrast(1.25) brightness(0.9);
+        backdrop-filter: blur(20px) saturate(1.75) brightness(0.8);
         mask-image: linear-gradient(to top, black 10px, transparent 30px);
-        -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%);
+        -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%);
         pointer-events: none;
     }
 
