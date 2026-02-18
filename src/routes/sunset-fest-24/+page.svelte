@@ -21,7 +21,7 @@
     text2="I served as project manager and creative lead, guiding the development of a flexible design system that supported posters, flyers, merchandise, signage, and social media assets while enabling partner teams, including Entertainment Council, to produce additional materials that remained cohesive and on-brand."
     img="img/ssf24/Poster.avif"
 />
-<div class="grid-bg">
+<div class="grid-bg" style="background-color: #1d181e;">
 
 <section>
     <div class="gallery">

@@ -35,6 +35,7 @@
         color: var(--lime100);
         transition: background-color var(--animationquick), gap var(--animationquick);
         text-wrap: balance;
+        font-family: var(--ffmono);
     }
 
     .hero-text{

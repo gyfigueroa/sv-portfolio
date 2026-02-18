@@ -87,8 +87,8 @@
             const emoji = wrapper.firstElementChild;
 
             const currID = emoji.id;
-            emoji.style.background = `linear-gradient(to top, var(--${currID}1,#3acfd5) 0%, var(--${currID}2, #3a4ed5) 100%)`;
-            emoji.style.boxShadow = `inset 0px -3px 3px 3px var(--${currID}2, #3a4ed5), inset 0px 3px 3px 3px var(--${currID}1,#3acfd5), 0px 5px 3px -3px rgba(0,0,0,0.75)`;
+            //emoji.style.background = `linear-gradient(to top, var(--${currID}1,#3acfd5) 0%, var(--${currID}2, #3a4ed5) 100%)`;
+            //emoji.style.boxShadow = `inset 0px -3px 3px 3px var(--${currID}2, #3a4ed5), inset 0px 3px 3px 3px var(--${currID}1,#3acfd5), 0px 5px 3px -3px rgba(0,0,0,0.75)`;
             wrapper.animate(
                 [
                     // keyframes
@@ -115,37 +115,37 @@
 <div class="avatar-container">
     <img class="center img-border" src="{img}" alt="">
     <div class="animator">
-        <p class="emoji center" id="fire">❤️‍🔥</p>
+        <p class="emoji center" id="fire" style="--input:#c10b00;">❤️‍🔥</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="avocado">🥑</p>
+        <p class="emoji center" id="avocado" style="--input:#9AFF00;">🥑</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="splat">🫟</p>
+        <p class="emoji center" id="splat" style="--input:#4e02ff;">🫟</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="boot">🥾</p>
+        <p class="emoji center" id="boot" style="--input:#05d69a;">🥾</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="film">🎞</p>
+        <p class="emoji center" id="film" style="--input:#ae6005;">🎞</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="tulip">🌷</p>
+        <p class="emoji center" id="tulip" style="--input:#d500c1;">🌷</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="mac">👨‍💻</p>
+        <p class="emoji center" id="mac" style="--input:#36b7ff;">👨‍💻</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="bulb">💡</p>
+        <p class="emoji center" id="bulb" style="--input:#ffdb14">💡</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="mexico">🇲🇽</p>
+        <p class="emoji center" id="mexico" style="--input:#00aa21;">🇲🇽</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="airpods">🎧</p>
+        <p class="emoji center" id="airpods" style="--input:#a000ff;">🎧</p>
     </div>
     <div class="animator">
-        <p class="emoji center" id="eggs">🍳</p>
+        <p class="emoji center" id="eggs" style="--input:#ffa200;">🍳</p>
     </div>
 </div>
 
@@ -216,9 +216,14 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
+    } 
 
     .emoji{
+        --input: #59c61e;
+
+        --seconday:  var(--input); 
+        --primary:  color-mix(in oklab, var(--input), black 50%);
+
         width: 2.25em;
         height: 2.25em;
         font-size: 1rem;
@@ -228,8 +233,8 @@
         justify-items: center;
         justify-content: center;
         text-align: center;
-        background: linear-gradient(to top, #3acfd5 0%, #3a4ed5 100%);
-        box-shadow: inset 0px -3px 3px 3px #3a4ed5, inset 0px 3px 3px 3px #3acfd5, 0px 5px 4px -2px rgba(0,0,0,0.5);
+        background: linear-gradient(to top, var(--primary,#3acfd5) 0%, var(--seconday,#3a4ed5) 100%);
+        box-shadow: inset 0px -3px 3px 3px var(--seconday,#3a4ed5) , inset 0px 3px 3px 3px var(--primary,#3acfd5), 0px 5px 4px -2px rgba(0,0,0,0.5);
         pointer-events: auto;
     }
 

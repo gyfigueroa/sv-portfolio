@@ -12,7 +12,7 @@
 
 <Hero
     category="MERCHANDISE, SOCIAL MEDIA CAMPAIGN"
-    title="MHI Conference"
+    title="Mental Health Initiative Conference"
     role="Project Manager"
     names="Gabriel Figueroa"
     role2="Lead Designer"

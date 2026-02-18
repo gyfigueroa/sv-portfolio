@@ -32,7 +32,7 @@
         </div>
 
         <div class="slider" id="a2">
-            <img src="img/applebttm/mockup1.webp" alt="" class="img-border " >
+            <img src="img/applebttm/mockup1.webp" alt="" class="gallery-img " >
         </div>
 
         <div id="b">
@@ -88,7 +88,7 @@
         </div>
 
         <div class="slider" id="b2">
-            <img src="img/applebttm/mockup2.webp" alt="" class="img-border " >
+            <img src="img/applebttm/mockup2.webp" alt="" class="gallery-img " >
         </div>
 
         <div id="f">
@@ -118,7 +118,7 @@
         </div>
 
         <div class="slider" id="c2">
-            <img src="img/applebttm/header.webp" alt="" class="img-border">
+            <img src="img/applebttm/header.webp" alt="" class="gallery-img">
         </div>
         
 
@@ -131,7 +131,9 @@
 </div>
 
 <style>
-
+    section{
+        max-width: 1080px;
+    }
     
     .article-grid{
         display: grid;

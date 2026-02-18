@@ -20,15 +20,15 @@
     img='img/nak/NAK-hero.svg'
 />
 
-<div class="grid-bg">
+<div class="grid-bg" style="background-color: #3e2424;">
 
 <section>
     <div class="gallery">
         <img src="img/nak/picnakday.webp" alt="" class="gallery-img" id="item-a">
 
-        <img src="img/nak/tshirt-1.webp" alt="" class="gallery-img" id="item-b">
+        <img src="img/nak/tshirt-1.webp" alt="" class="" id="item-b">
 
-        <img src="img/nak/tshirt-2.webp" alt="" class="gallery-img" id="item-c">
+        <img src="img/nak/tshirt-2.webp" alt="" class="" id="item-c">
 
         <img src="img/nak/fall-rush-23-1.webp" alt="" class="gallery-img" id="item-d">
 
@@ -121,10 +121,6 @@
     "M M N N . .";
 }
 
-.gallery-img{
-    border-radius: 20px;
-}
-
 
 #item-a{
     grid-area: A;
@@ -189,6 +185,7 @@
     overflow: hidden;
     position: relative;
     height: fit-content;
+    border-radius: var(--spacing4);
 }
 
 .mini-grid-slider-container::after{
@@ -199,6 +196,12 @@
     height: 100%;
     background-color: aqua;
     background: linear-gradient(90deg,var(--sand0) 1%, var(--sand100) 90%);
+    background: var(--sand25);
+    backdrop-filter: blur(20px);
+    /* Standard property */
+    mask-image: linear-gradient(to left, black, transparent);
+    /* Webkit prefix for broader compatibility (still needed for some browsers) */
+    -webkit-mask-image: linear-gradient(to left, black, transparent); 
 }
 
 
@@ -210,6 +213,7 @@
     position: relative;
     overflow: scroll;
     border-radius: calc( var(--spacing4) - 10px);
+    padding: 10px;
 }
 
 

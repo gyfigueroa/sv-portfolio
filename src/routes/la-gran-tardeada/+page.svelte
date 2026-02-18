@@ -20,12 +20,12 @@
     img='img/la-gran-tardeada/cover.svg'
 />
 
-<div class="grid-bg">
+<div class="grid-bg" style="background-color: #131818;">
 
 <section>
     <div class="gallery">
         <img src="img/la-gran-tardeada/LaGranTardeadaPoster.webp" alt="" class="gallery-img">
-        <img src="img/la-gran-tardeada/tshirt-mockup.png" alt="" class="gallery-img">
+        <img src="img/la-gran-tardeada/tshirt-mockup.png" alt="" class="" width="900px" id='tshirt'>
     </div>
 </section>
 
@@ -46,7 +46,7 @@
     grid-area: A;
 }
 
-.gallery-img:nth-of-type(2){
+#tshirt{
     grid-area: B;
 }
 

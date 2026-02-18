@@ -31,7 +31,7 @@
         </div>
 
         
-        <img src="img/memorial-union/meetTheTeam.webp" alt="" class="img-border margin3" id="a2">
+        <img src="img/memorial-union/meetTheTeam.webp" alt="" class="gallery-img margin3" id="a2">
         
 
         <div id="b">
@@ -58,11 +58,11 @@
 
         <div class=" " id="d2">
             <div>
-                <div class="quote sw" style="background-color: #2196F3;">
+                <div class="quote sw" style="--color: #2196F3;">
                     <p class="emphasis">“As a central hub of student life, the UC Davis Memorial Union hosts a range of services and programs that <b>help students connect to campus and enrich their experience.</b>"</p>
                 </div>
 
-                <div class="quote ne" style="background-color: #ff9800;">
+                <div class="quote ne" style="--color: #ff9800;">
                     <p class="emphasis">“a variety of resources and spaces that allow students to <b>study, snack and socialize</b>”</p>
                 </div>
             </div>
@@ -136,15 +136,15 @@
 
         <div class="" id="h2">
             <div>
-                <div class="quote sw" style="background-color: #009688;">
+                <div class="quote sw" style="--color: #009688;">
                     <p class="emphasis">“It’s very hard to find a spot at the MU, I give up most of the time.”</p>
                 </div>
 
-                <div class="quote se" style="background-color: #E91E63;">
+                <div class="quote se" style="--color: #E91E63;">
                     <p class="emphasis">“They ran out of Rice Krispies and I had to get something else. It would be nice to know what they had available at the CoHo that day.”</p>
                 </div>
 
-                <div class="quote nw" style="background-color: #ff5722;">
+                <div class="quote nw" style="--color: #ff5722;">
                     <p class="emphasis">“I am not interested in learning more about the different services because I only use them when I run into issues.”</p>
                 </div>
             </div>
@@ -207,19 +207,19 @@
         <div  id="l">
             <d>
                 <h2>Mid-fidelity Prototypes</h2>
-                <p class="label">Study</p>
+                <p class="mono label-outline">Study</p>
                 <p>To showcase study spots in the MU, we implemented a horizontal scroll layout with card components for easy readability. We included information about seating availability and hours on each card component in addition to buttons that indicated the booking status of each room.</p>
                 <p>An important thing to note is that we designed our first version of mid-fidelity wireframes under the impression that any student could book a study room with their choice of seat layout. We later discovered that only leaders of a student organization can book a study room which led to a pivot in user flow for user testing. To be more specific, we got rid of the user flow for booking and only made use of our study home screen and calendar screen during user testing.</p>
             </d>
         </div>
         
         <div class="slider" id="l2">
-            <img src="img/memorial-union/midfiStudy.webp" alt="" class="img-border " >
+            <img src="img/memorial-union/midfiStudy.webp" alt="" class="gallery-img " >
         </div>
 
         <div  id="m">
             <div>
-                <p class="label">Food</p>
+                <p class="mono label-outline">Food</p>
                 <p>Our Food tab implements a vertical scroll layout with card components showcasing important information like hours and wait times for each restaurant in the Memorial Union. Each card takes you to a dedicated page for the restaurant that allows users to filter a live menu of the restaurant’s selection by type, recommendations, and availability.</p>
                 <p>Additional information like a complete list of a restaurant’s hours, their phone number, as well as a popular times chart, can be found by tapping the right pointing arrow at the header of the page.</p>
             </div>
@@ -227,12 +227,12 @@
         
 
         <div class="slider" id="m2">
-            <img src="img/memorial-union/midfiFood.webp" alt="" class="img-border " >
+            <img src="img/memorial-union/midfiFood.webp" alt="" class="gallery-img " >
         </div>
 
         <div  id="n">
             <div>
-                <p class="label">Social</p>
+                <p class="mono label-outline">Social</p>
                 <p>The Social page is dedicated to all social activities at the MU such as events and games. We added a carousel for a quick view of upcoming MU events and added a “See More” button for users to view these events in a calendar view that was influenced by Google Calendar and Apple Calendar for the design and user flow. When a user clicks on a date, an hourly view of the selected date is displayed as a popup. When they click on an event, the popup switches to a detailed popup of that event. There, they are able to learn more about the event and add the event to their personal calendar if they choose to do so.</p>
                 <p>The Social page also allows users to explore the Games Area, a recreational center with activities such as billiards, bowling, and gaming. They can view a popular times chart to avoid long wait times and click on a card component to learn more about different games.</p>
             </div>
@@ -240,19 +240,19 @@
         
 
         <div class="slider" id="n2">
-            <img src="img/memorial-union/midfiSocial.webp" alt="" class="img-border " >
+            <img src="img/memorial-union/midfiSocial.webp" alt="" class="gallery-img " >
         </div>
 
         <div id="o">
             <div>
-                <p class="label">Services</p>
+                <p class="mono label-outline">Services</p>
                 <p>With the Services tab, we played around with different styles and layouts to find the best way to showcase the range of services at the MU and what each service does. We strived to include information such as hours and a description of each service.</p>
             </div>
         </div>
         
 
         <div class="slider" id="o2">
-            <img src="img/memorial-union/midfiServices.webp" alt="" class="img-border " >
+            <img src="img/memorial-union/midfiServices.webp" alt="" class="gallery-img " >
         </div>
 
         <div id="p">
@@ -267,7 +267,7 @@
         </div>
 
         <div id="q">
-            <p class="label">Booking study rooms</p>
+            <p class="mono label-outline">Booking study rooms</p>
             <p>During the usability tests focused on the Study page, we identified a problem where users were mistakenly led to believe that they could book study rooms through the app. To address this, we implemented a helper tab that explicitly states that the rooms are only bookable for student organizations. This solution aims to prevent confusion and ensure that users have accurate expectations regarding the availability of study rooms.</p>
         </div>
 
@@ -276,7 +276,7 @@
         </div>
 
         <div id="r">
-            <p class="label">Checking restaurant wait times</p>
+            <p class="mono label-outline">Checking restaurant wait times</p>
             <p>During the usability tests focused on the Food page, we discovered that users were unaware of the popular times page when checking wait times for food. To address this, we added helper text to guide users to the popular times page and clarified that the app does not currently support ordering. These changes aim to improve user understanding and streamline the process of checking wait times for food.</p>
         </div>
 
@@ -285,7 +285,7 @@
         </div>
 
         <div id="s">
-            <p class="label">Viewing event listings</p>
+            <p class="mono label-outline">Viewing event listings</p>
             <p>During the usability tests focused on Social page, we discovered that users wanted a more comprehensive view of all the events rather than just a calendar view. To address this, we implemented a list view along with a search bar, allowing users to quickly and efficiently browse through all the events at a glance. This solution aims to improve user experience and provide a convenient way for students to explore and engage with the various events happening at the MU.</p>
         </div>
 
@@ -298,7 +298,7 @@
         </div>
 
         <div class="slider" id="t2">
-            <img src="img/memorial-union/designSystem.webp" alt="" class="img-border " >
+            <img src="img/memorial-union/designSystem.webp" alt="" class="gallery-img " >
         </div>
 
         <div id="u">
@@ -379,6 +379,11 @@
         --ne-quote-border: var(--spacing6) 10px var(--spacing6) var(--spacing6);
         --nw-quote-border: 10px var(--spacing6) var(--spacing6) var(--spacing6);
     }
+
+    section{
+        max-width: 1080px;
+    }
+
     .article-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -423,10 +428,15 @@
     }
 
     .quote{
+        --color:pink;
+        --primary: var(--color);
+        --secondary: color-mix(in oklab, var(--color), black 20%);
+        --highlight: color-mix(in oklab, var(--color), white 30%);
         padding: var(--spacing5);
         color: var(--sand100);
         margin: var(--spacing3) auto;
-        box-shadow: 0px 0px 0px 1px var(--gray50), var(--softshadow), inset 0px 10px 40px 10px var(--sand50), inset 0px 5px 10px -2px var(--sand100);
+        background-color: var(--primary);
+        box-shadow: 0px 0px 0px 2px var(--secondary, magenta), var(--softshadow), inset 0px 10px 30px 10px var(--highlight), inset 0px 5px 10px 0px var(--sand100);
     }
     
     .quote.ne{

@@ -25,7 +25,7 @@
     img="img/elections/Stickers.avif"
 />
 
-<div class="grid-bg">
+<div class="grid-bg" style="background-color: #041624;">
 
 <section>
     <div class="gallery">

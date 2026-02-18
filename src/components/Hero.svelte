@@ -40,33 +40,33 @@
                 <p class="label">{category}</p>
                 <p class="hero-title">{title}</p>
                 <div class="credit">
-                    <p class="label">{role}</p>
+                    <p class="mono label-outline label-white">{role}</p>
                     <p class="hero-text">{names}</p>
                 </div>
                 {#if role2 !== ''}
                 <div class="credit">
-                    <p class="label">{role2}</p>
+                    <p class="mono label-outline label-white">{role2}</p>
                     <p class="hero-text">{names2}</p>
                 </div>
                 {/if}
 
                 {#if role3 !== ''}
                 <div class="credit">
-                    <p class="label">{role3}</p>
+                    <p class="mono label-outline label-white">{role3}</p>
                     <p class="hero-text">{names3}</p>
                 </div>
                 {/if}
 
                 {#if role4 !== ''}
                 <div class="credit">
-                    <p class="label">{role4}</p>
+                    <p class="mono label-outline label-white">{role4}</p>
                     <p class="hero-text">{names4}</p>
                 </div>
                 {/if}
 
                 {#if role5 !== ''}
                 <div class="credit">
-                    <p class="label">{role5}</p>
+                    <p class="mono label-outline label-white">{role5}</p>
                     <p class="hero-text">{names5}</p>
                 </div>
                 {/if}

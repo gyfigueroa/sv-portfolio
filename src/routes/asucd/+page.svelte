@@ -10,7 +10,7 @@
 <Header/>
 
 <Hero
-    category="BRAND GUIDELIES, BRAND IDENTITY"
+    category="BRAND GUIDELINES, BRAND IDENTITY"
     title='Associated Students of UC Davis'
     role='Project Manager'
     names='Gabriel Figueroa'
@@ -66,6 +66,14 @@
 </div>
 
 <style>
+
+section{
+    width: 90%;
+    max-width: 1080px;
+    width: 90%;
+    
+    margin: 0 auto;
+}
 .gallery{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
