@@ -107,7 +107,7 @@
         
         <div>
             <p class="hero-text">Designer & developer crafting intuitive, human-centered digital experiences.</p>
-            <p class="hero-text">Former Project Manager @ ASUCD Creative Media.</p>
+            <p class="hero-text">Currently designing at Bodewell Group.</p>
             <p class="hero-text">California-grown. Pistachio-fueled.</p>
         </div>
     </div>
@@ -153,29 +153,33 @@
     </div>
 </div> -->
 
-<div class="banner-anchor-2">
-    <div class="banner2" bind:this={banner}>
-        <div class="banner-element hero-serif">Sel<i>e</i>c<i>t</i>ed</div>
-        <div class="banner-element hero-serif"><i>W</i>ork</div>
-        <div class="banner-element hero-serif">*</div>
-        <div class="banner-element hero-serif">Se<i>l</i>ecte<i>d</i></div>
-        <div class="banner-element hero-serif">W<i>o</i>r<i>k</i></div>
-        <div class="banner-element hero-serif">*</div>
-        <div class="banner-element hero-serif">Sele<i>c</i>ted</div>
-        <div class="banner-element hero-serif">Wo <i>r</i>k</div>
-        <div class="banner-element hero-serif">*</div>
-        <div class="banner-element hero-serif">S<i>e</i>lec<i>t</i>ed</div>
-        <div class="banner-element hero-serif"><i>W</i>ork</div>
-        <div class="banner-element hero-serif">*</div>
-        <div class="banner-element hero-serif"><i>S</i>electe<i>d</i></div>
-        <div class="banner-element hero-serif">Wor<i>k</i></div>
-        <div class="banner-element hero-serif">*</div>
-        <div class="banner-element hero-serif">Sel<i>e</i>c<i>t</i>ed</div>
-        <div class="banner-element hero-serif"><i>W</i>ork</div>
-        <div class="banner-element hero-serif">*</div>
+<div class="banner-container">
+    <div class="banner-anchor-2">
+        <div class="banner2" bind:this={banner}>
+            <div class="banner-element hero-serif">Sel<i>e</i>c<i>t</i>ed</div>
+            <div class="banner-element hero-serif"><i>W</i>ork</div>
+            <div class="banner-element hero-serif">*</div>
+            <div class="banner-element hero-serif">Se<i>l</i>ecte<i>d</i></div>
+            <div class="banner-element hero-serif">W<i>o</i>r<i>k</i></div>
+            <div class="banner-element hero-serif">*</div>
+            <div class="banner-element hero-serif">Sele<i>c</i>ted</div>
+            <div class="banner-element hero-serif">Wo <i>r</i>k</div>
+            <div class="banner-element hero-serif">*</div>
+            <div class="banner-element hero-serif">S<i>e</i>lec<i>t</i>ed</div>
+            <div class="banner-element hero-serif"><i>W</i>ork</div>
+            <div class="banner-element hero-serif">*</div>
+            <div class="banner-element hero-serif"><i>S</i>electe<i>d</i></div>
+            <div class="banner-element hero-serif">Wor<i>k</i></div>
+            <div class="banner-element hero-serif">*</div>
+            <div class="banner-element hero-serif">Sel<i>e</i>c<i>t</i>ed</div>
+            <div class="banner-element hero-serif"><i>W</i>ork</div>
+            <div class="banner-element hero-serif">*</div>
 
+        </div>
     </div>
+
 </div>
+
 
 
 <div class="grid-bg">
@@ -484,6 +488,10 @@
         transform: rotate(-3deg);
         margin: -50px;
         z-index: 5;
+    }
+
+    .banner-container{
+        overflow-x: clip;
     }
 
     
